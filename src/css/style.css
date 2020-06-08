@@ -1,0 +1,23 @@
+@import "grid.css";
+@import "nav.css";
+@import "fonts/fonts.css";
+
+/* Colors */
+
+
+/*
+blue:       #1F4E8C
+dark grey:  #3D3F45
+light grey: #E5E5E5
+red:        #A62C21
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+}

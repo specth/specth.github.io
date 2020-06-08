@@ -1,0 +1,86 @@
+/* === GRID SYSTEM === */
+
+.container {
+    margin: auto;
+    width: 75%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
+
+.row {
+    margin: 2rem 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    padding: .8rem;
+}
+
+.col-1 {
+    width: 16.666%;
+}
+
+.col-2 {
+    width: 33.333%;
+}
+
+.col-3 {
+    width: 50%;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .col-1 {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-1 {
+        width: 50%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-1 {
+        width: 100%;
+    }
+}
