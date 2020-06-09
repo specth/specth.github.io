@@ -5,113 +5,92 @@
 
 
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <script type="text/javascript" src="src/js/nav.js"></script>
+    <script type="text/javascript" src="src/js/collapsible.js"></script>
 </head>
 
 <body>
     <header id="header">
-        <nav class="header-nav">
+        <nav class="sidebar-nav">
 
-            <!-- desktop navigation bar -->
-            <div class="container desktop-nav">
-                <div class="row">
-                    <div class="col-6">
-                        <ul>
-                            <li class="active"><a href="index.html">Startseite</a></li>
-                            <li><a href="#">Leistungen</a></li>
-                            <li><a href="#">Kontakt</a></li>
-                            <li><a href="#">Impressum</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- sidebar navigation -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">About</a>
+                <a href="javascript.html">Pure JS</a>
+                <a href="#">Node.js</a>
+                <a href="#">Contact</a>
             </div>
 
+            <!-- Use any element to open the sidenav -->
+            <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
 
-            <!-- mobile navigation bar -->‚
-            <div class="container mobile-nav">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="mobile-nav-dropdown clearfix">
-                            <div class="mobile-nav-button">
-                                <span>&equiv;</span>
-                            </div>
-
-                            <div class="mobile-nav-content clearfix">
-                                <ul>
-                                    <li class="active"><a href="index.html">Startseite</a></li>
-                                    <li><a href="#">Leistungen</a></li>
-                                    <li><a href="#">Kontakt</a></li>
-                                    <li><a href="#">Impressum</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
         </nav>
 
     </header>
 
-    <main id="main" class="container">
-        <div class="row">
-            <div class="col-2">
-                <h1>
-                    Hello H1 World
-                </h1>
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>
+                        Hello H1 World
+                    </h1>
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur
-                    officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
-                </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime
+                        pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <h2>
+                        Hello H2 World
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos
+                        iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet
+                        itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
+                    </p>
+                    </p>
+                </div>
+
+                <div class="col-2">
+                    <h3>Hello H3 World</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
+                    </p>
+                </div>
             </div>
 
-            <div class="col-2">
-                <h2>
-                    Hello H2 World
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos
-                    iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque
-                    dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
-                </p>
-                </p>
-            </div>
+            <div class="row">
+                <div class="col-3">
+                    <h1>
+                        Hello H1 World
+                    </h1>
 
-            <div class="col-2">
-                <h3>Hello H3 World</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
-                </p>
-            </div>
-        </div>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime
+                        pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
+                    </p>
+                </div>
 
-        <div class="row">
-            <div class="col-3">
-                <h1>
-                    Hello H1 World
-                </h1>
-
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur
-                    officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
-                </p>
-            </div>
-
-            <div class="col-3">
-                <h2>
-                    Hello H2 World
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
-                    elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos
-                    iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque
-                    dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
-                </p>
-                </p>
+                <div class="col-3">
+                    <h2>
+                        Hello H2 World
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos
+                        iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet
+                        itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
+                    </p>
+                    </p>
+                </div>
             </div>
         </div>
     </main>

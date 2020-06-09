@@ -1,6 +1,7 @@
 @import "grid.css";
 @import "nav.css";
 @import "fonts/fonts.css";
+@import "collapsible.css";
 
 /* Colors */
 
@@ -20,4 +21,15 @@ body {
     font-size: 16px;
     margin: 0;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+#main {
+    position: relative;
+    transition: margin-left .5s;
+    padding: 10px;
+}
+
+header>h1 {
+    display: inline-block;
+    float: right;
 }
