@@ -10,8 +10,7 @@
 
 <body>
     <header id="header">
-        <nav class="sidebar-nav">
-
+        <nav>
             <!-- sidebar navigation -->
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,46 +19,56 @@
                 <a href="#">Node.js</a>
                 <a href="#">Contact</a>
             </div>
-
             <!-- Use any element to open the sidenav -->
             <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
-
         </nav>
-
     </header>
+
+
 
     <main id="main">
         <div class="container">
 
-
             <div class="row">
                 <div class="col-6">
-                    <h1>
-                        Hello H1 World
-                    </h1>
-                    <button type="button" class="collapsible">Open Collapsible</button>
-                    <p class="content">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime
-                        pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
-                    </p>
+                    <h1>Some small JavaScript Tools</h1>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-6">
-                    <h1>
-                        Hello H1 World
-                    </h1>
+                    <div class="row exercise">
+                        <div class="col-6">
+                            <form id="bmi-calculator">
+                                <h2>BMI calculator</h2>
 
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus. Non dignissimos iure est eum, amet itaque dolorum nemo. Nesciunt maxime
-                        pariatur officia rerum cumque iste quod doloribus modi ducimus. Maxime, natus.
-                    </p>
+                                <p>
+                                    <label for="height">Height (m):</label>
+                                    <input type="text" id="height" name="height" />
+                                </p>
+                                <p>
+                                    <label for="weight">Bodyweight (kg):</label>
+                                    <input type="text" id="weight" name="weight" />
+                                </p>
+                                <p>
+                                    <label for="bmi">Your BMI: </label>
+                                    <span id="bmi"></span>
+                                </p>
+                                <script type="text/javascript" src="src/js/bmiCalculator.js"></script>
+                                <div id="weight-normal" style="display: none" ;>Your BMI is fine!</div>
+                                <div id="weight-low" style="display: none">Your BMI is too low!</div>
+                                <div id="weight-high" style="display: none">Your BMI is too high!</div>
+
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- This is how collapsing will work
+        <button type="button" class="collapsible"><span id="collapsible__indicator"></span>Show BMI Calculator</button>
+        <div class="content"></div>
+        -->
     </main>
 
     <footer id="footer">

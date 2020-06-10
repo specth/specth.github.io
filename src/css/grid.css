@@ -1,3 +1,13 @@
+/* Colors *
+
+Red:          #A22C29
+Black:        #000
+Yellow:       #F8F32B
+White:        #FFF
+Green:        #2E933C
+*/
+
+
 /* === GRID SYSTEM === */
 
 .container {
@@ -7,12 +17,12 @@
 
 @media (max-width: 480px) {
     .container {
-        width: 100%;
+        width: 95%;
     }
 }
 
 .row {
-    margin: auto;
+    margin: auto auto 1rem auto;
 }
 
 .row-dark {

@@ -1,3 +1,13 @@
+/* Colors *
+
+Red:          #A22C29
+Black:        #000
+Yellow:       #F8F32B
+White:        #FFF
+Green:        #2E933C
+*/
+
+
 /* The side navigation menu */
 
 .sidenav {
@@ -12,7 +22,7 @@
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: #111;
+    background-color: #000;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -29,7 +39,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #FFF;
     display: block;
     transition: 0.3s;
 }
@@ -38,7 +48,7 @@
 /* When you mouse over the navigation links, change their color */
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #F8F32B;
 }
 
 
@@ -55,6 +65,11 @@
 #openMenuBtn {
     font-size: 3rem;
     margin-left: 10px;
+    border: none;
+}
+
+#openMenuBtn:hover {
+    cursor: pointer;
 }
 
 

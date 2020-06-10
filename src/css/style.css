@@ -3,14 +3,13 @@
 @import "fonts/fonts.css";
 @import "collapsible.css";
 
-/* Colors */
+/* Colors *
 
-
-/*
-blue:       #1F4E8C
-dark grey:  #3D3F45
-light grey: #E5E5E5
-red:        #A62C21
+Red:          #A22C29
+Black:        #000
+Yellow:       #F8F32B
+White:        #FFF
+Green:        #2E933C
 */
 
 * {
@@ -19,6 +18,7 @@ red:        #A62C21
 
 body {
     font-size: 16px;
+    color: 111;
     margin: 0;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
 }
@@ -29,7 +29,12 @@ body {
     padding: 10px;
 }
 
-header>h1 {
-    display: inline-block;
-    float: right;
+.exercise {
+    margin: 18px;
+    border: 1px solid #151515;
+}
+
+.col-6>h1 {
+    text-align: center;
+    margin-top: 0;
 }
