@@ -2,6 +2,7 @@
 @import "nav.css";
 @import "fonts/fonts.css";
 @import "collapsible.css";
+@import "reactiontest.css";
 
 /* Colors *
 
@@ -29,12 +30,27 @@ body {
     padding: 10px;
 }
 
+.gameHeader::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .exercise {
-    margin: 18px;
+    margin-bottom: 2rem;
     border: 1px solid #151515;
 }
 
 .col-6>h1 {
     text-align: center;
     margin-top: 0;
+}
+
+.gameHeader>h2 {
+    display: block;
+    float: left;
+}
+
+.gameHeader {
+    display: block;
 }

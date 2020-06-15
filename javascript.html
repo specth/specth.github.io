@@ -2,10 +2,12 @@
 <html>
 
 <head>
-
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <script type="text/javascript" src="src/js/nav.js"></script>
+    <script type="text/javascript" src="src/js/bmiCalculator.js"></script>
+    <script type="text/javascript" src="src/js/collapsible.js"></script>
 </head>
 
 <body>
@@ -34,41 +36,52 @@
                     <h1>Some small JavaScript Tools</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row exercise">
                 <div class="col-6">
-                    <div class="row exercise">
-                        <div class="col-6">
-                            <form id="bmi-calculator">
-                                <h2>BMI calculator</h2>
+                    <h2>BMI calculator</h2>
+                    <form id="bmi-calculator">
+                        <p>
+                            <label for="height">Height (m):</label>
+                            <input type="text" id="height" name="height" />
+                        </p>
+                        <p>
+                            <label for="weight">Bodyweight (kg):</label>
+                            <input type="text" id="weight" name="weight" />
+                        </p>
+                        <p>
+                            <label for="bmi">Your BMI: </label>
+                            <span id="bmi"></span>
+                        </p>
+                        <div id="weight-normal" style="display: none" ;>Your BMI is fine!</div>
+                        <div id="weight-low" style="display: none">Your BMI is too low!</div>
+                        <div id="weight-high" style="display: none">Your BMI is too high!</div>
+                    </form>
+                </div>
+            </div>
+            <div class="row exercise">
+                <div class="col-6">
+                    <div class="gameHeader">
+                        <h2>Test your reactions!</h2>
 
-                                <p>
-                                    <label for="height">Height (m):</label>
-                                    <input type="text" id="height" name="height" />
-                                </p>
-                                <p>
-                                    <label for="weight">Bodyweight (kg):</label>
-                                    <input type="text" id="weight" name="weight" />
-                                </p>
-                                <p>
-                                    <label for="bmi">Your BMI: </label>
-                                    <span id="bmi"></span>
-                                </p>
-                                <script type="text/javascript" src="src/js/bmiCalculator.js"></script>
-                                <div id="weight-normal" style="display: none" ;>Your BMI is fine!</div>
-                                <div id="weight-low" style="display: none">Your BMI is too low!</div>
-                                <div id="weight-high" style="display: none">Your BMI is too high!</div>
-
-                            </form>
+                        <div>
+                            <button id="startButton" type="button">Start game</button>
+                            <button id="stopButton" type="button">Stop game</button>
                         </div>
+                    </div>
+                    <script type="text/javascript" src="./src/js/reaktionszeittester.js"></script>
+
+                    <div id="reaction-game">
+                        <div id="target"></div>
+
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- This is how collapsing will work
+        <!-- 
+        This is how collapsing will work
         <button type="button" class="collapsible"><span id="collapsible__indicator"></span>Show BMI Calculator</button>
-        <div class="content"></div>
-        -->
+        <div class="content">qweqweqwe</div>
+ -->
     </main>
 
     <footer id="footer">
@@ -78,7 +91,6 @@
 
     </footer>
 
-    <script type="text/javascript" src="src/js/collapsible.js"></script>
 </body>
 
 </html>
