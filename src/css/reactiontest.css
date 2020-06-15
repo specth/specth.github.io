@@ -19,7 +19,7 @@ Green:        #2E933C
     position: relative;
     display: block;
     height: 200px;
-    padding: 20px;
+    margin: 20px;
 }
 
 #startButton {

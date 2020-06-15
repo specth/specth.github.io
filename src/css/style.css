@@ -30,7 +30,7 @@ body {
     padding: 10px;
 }
 
-.gameHeader::after {
+.gameContent::after {
     content: "";
     clear: both;
     display: block;
@@ -46,11 +46,10 @@ body {
     margin-top: 0;
 }
 
-.gameHeader>h2 {
+.gameContent>h2 {
     display: block;
-    float: left;
 }
 
-.gameHeader {
+.gameContent {
     display: block;
 }
