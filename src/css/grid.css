@@ -55,6 +55,10 @@ Green:        #2E933C
     width: 50%;
 }
 
+.col-4 {
+    width: 66.666%;
+}
+
 .col-6 {
     width: 100%;
 }
@@ -73,6 +77,9 @@ Green:        #2E933C
         width: 100%;
     }
     .col-3 {
+        width: 100%;
+    }
+    .col-4 {
         width: 100%;
     }
 }

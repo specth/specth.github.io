@@ -13,11 +13,11 @@ class Renderer {
         let box = document.createElement("div");
         box.style.position = "absolute";
         box.style.top = "20px";
-        box.style.left = "20px";
-        box.style.width = "20px";
-        box.style.height = "20px";
+        box.style.left = "40%";
+        box.style.width = "30px";
+        box.style.height = "30px";
         box.style.backgroundColor = "#000";
-
+        box.style.borderRadius = "100%";
         this.element.appendChild(box);
         this.box = box;
     };
@@ -26,7 +26,7 @@ class Renderer {
         let gameOverMessage = document.createElement("div");
         gameOverMessage.innerHTML = "Game over!</br>Your score: " + score + " Points.";
 
-        gameOverMessage.style.marginTop = "30%";
+        gameOverMessage.style.marginTop = "20%";
         gameOverMessage.align = "center";
         gameOverMessage.style.fontSize = "1.5rem";
         gameOverMessage.style.textDecorationStyle = "solid";
