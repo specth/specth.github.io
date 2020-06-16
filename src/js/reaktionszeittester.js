@@ -1,6 +1,6 @@
 "use strict";
 
-document.getElementById("startButton").addEventListener("click", () => {
+document.getElementById("reactionGameStartButton").addEventListener("click", () => {
     let timeout;
     let target = document.getElementById("target");
     let timeOfAppearance;
@@ -84,7 +84,7 @@ document.getElementById("startButton").addEventListener("click", () => {
     });
 
     /* Exit game */
-    document.getElementById("stopButton").addEventListener("click", () => {
+    document.getElementById("reactionGameStopButton").addEventListener("click", () => {
         target.style.display = "none";
         document.getElementById("result").innerHTML = "";
     });

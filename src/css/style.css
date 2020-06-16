@@ -53,3 +53,12 @@ body {
 .gameContent {
     display: block;
 }
+
+#jumpGame {
+    margin: 0 auto;
+    background-color: #F8F32B;
+    border: 1px solid rgb(100, 100, 100);
+    width: 50%;
+    height: 400px;
+    position: relative;
+}

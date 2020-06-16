@@ -22,14 +22,14 @@ Green:        #2E933C
     margin: 20px;
 }
 
-#startButton {
+.startButton {
     clear: left;
     display: inline;
     float: left;
     margin-right: 10px;
 }
 
-#stopButton {
+.stopButton {
     display: inline;
     float: left;
 }
