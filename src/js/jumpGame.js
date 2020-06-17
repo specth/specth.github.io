@@ -57,11 +57,11 @@ class Box {
         this.speed = 0;
     };
     runLoop() {
-        this.speed += 0.075;
+        this.speed += 0.055;
         this.position = this.position + this.speed;
     };
     moveUp() {
-        this.speed = -4.5;
+        this.speed = -4;
     };
 };
 
