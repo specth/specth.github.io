@@ -2,7 +2,8 @@
 @import "nav.css";
 @import "fonts/fonts.css";
 @import "collapsible.css";
-@import "reactiontest.css";
+@import "minigames.css";
+@import "blog.css";
 
 /* Colors *
 
@@ -24,16 +25,14 @@ body {
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+article {
+    margin-bottom: 4rem;
+}
+
 #main {
     position: relative;
     transition: margin-left .5s;
     padding: 10px;
-}
-
-.gameContent::after {
-    content: "";
-    clear: both;
-    display: block;
 }
 
 .exercise {
@@ -44,23 +43,4 @@ body {
 .col-6>h1 {
     text-align: center;
     margin-top: 0;
-}
-
-.gameContent>h2 {
-    display: block;
-}
-
-.gameContent {
-    display: block;
-}
-
-#jumpGame {
-    margin: 0px auto;
-    background-color: #F8F32B;
-    border: 1px solid #151515;
-    width: 50%;
-    min-width: 150px;
-    max-width: 250px;
-    height: 280px;
-    position: relative;
 }

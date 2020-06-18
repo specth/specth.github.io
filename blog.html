@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <script type="text/javascript" src="src/js/nav.js"></script>
+    <script type="text/javascript" src="src/js/blog.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="sidebar-nav">
+
+            <!-- sidebar navigation -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">About</a>
+                <a href="javascript.html">Pure JS</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+
+        </nav>
+
+    </header>
+
+    <main id="main">
+        <div class="container blog">
+            <div class="row blogEntry">
+                <div class="col-2 blogImageContainer">
+                    <span class="helper"></span><img class="blogImage" src="./src/img/111elf_banner.jpg">
+                </div>
+
+                <div class="col-4 blogPreview">
+                    <h2>
+                        Und noch ein Blogartikel
+                    </h2>
+                    <p class="shortDescription">
+                        Und hier folgt bald noch ein Blogartikel
+                    </p>
+                </div>
+            </div>
+            <div class="row blogEntry">
+                <div class="col-2 blogImageContainer">
+                    <span class="helper"></span><img class="blogImage" src="./src/img/111elf_banner.jpg">
+                </div>
+
+                <div class="col-4 blogPreview">
+                    <h2>
+                        <a href="blog/01_warumDieseSeite.html">Warum diese Seite?</a>
+                    </h2>
+                    <p class="shortDescription">
+                        Als Softwaretester programmiere ich beruflich hauptsächlich automatisierte Tests. Dabei fehlt mir das Gefühl, selbst etwas zu "erschaffen". Ich möchte diese Seite nutzen, um selbst ein kleines Webprojekt aufzubauen, weiterzuentwicklen und zu pflegen.
+                    </p>
+                </div>
+            </div>
+            <!-- 
+            <div class="row blogEntry">
+                <div class="col-2 blogImage">
+                    <span class="helper"></span><img src="./src/img/111elf_banner.jpg">
+                </div>
+
+                <div class="col-4 blogPreview">
+                    <h2>
+                        Warum diese Seite?
+                    </h2>
+                    <p class="shortDescription">
+                        Als Softwaretester programmiere ich beruflich hauptsächlich automatisierte Tests. Dabei fehlt mir das Gefühl, selbst etwas zu "erschaffen". Ich möchte diese Seite nutzen, um selbst ein kleines Webprojekt aufzubauen, weiterzuentwicklen und zu pflegen.
+                    </p>
+                </div>
+            </div>
+            -->
+        </div>
+    </main>
+
+    <footer id="footer">
+        <nav id="footer-nav">
+
+        </nav>
+
+    </footer>
+</body>
+
+</html>

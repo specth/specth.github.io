@@ -33,3 +33,28 @@ Green:        #2E933C
     display: inline;
     float: left;
 }
+
+.gameContent>h2 {
+    display: block;
+}
+
+.gameContent {
+    display: block;
+}
+
+.gameContent::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#jumpGame {
+    margin: 0px auto;
+    background-color: #F8F32B;
+    border: 1px solid #151515;
+    width: 50%;
+    min-width: 150px;
+    max-width: 250px;
+    height: 280px;
+    position: relative;
+}
