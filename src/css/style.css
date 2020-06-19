@@ -12,10 +12,32 @@ Black:        #000
 Yellow:       #F8F32B
 White:        #FFF
 Green:        #2E933C
+Orange:       #FF9933
 */
 
 * {
     box-sizing: border-box;
+}
+
+a {
+    color: #A22C29;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+a:visited {
+    color: #A22C29;
+}
+
+h2>a {
+    text-decoration: none;
+    color: #000 !important;
+}
+
+h2>a::visited {
+    color: #000 !important;
 }
 
 body {

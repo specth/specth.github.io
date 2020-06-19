@@ -23,3 +23,9 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .blogImageContainer {
+        padding-bottom: 0px;
+    }
+}

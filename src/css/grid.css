@@ -12,7 +12,7 @@ Green:        #2E933C
 
 .container {
     margin: auto;
-    width: 75%;
+    width: 60%;
 }
 
 @media (max-width: 480px) {

@@ -8,7 +8,7 @@ Green:        #2E933C
 */
 
 
-/* The side navigation menu */
+/* side navigation menu */
 
 .sidenav {
     height: 100%;
@@ -24,23 +24,17 @@ Green:        #2E933C
     text-align: center;
 }
 
-
-/* The navigation menu links */
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1.8rem;
-    color: #FFF;
+    color: #FFF !important;
     display: block;
     transition: 0.3s;
 }
 
-
-/* When you mouse over the navigation links, change their color */
-
 .sidenav a:hover {
-    color: #F8F32B;
+    color: #F8F32B !important;
 }
 
 
