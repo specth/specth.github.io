@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../src/css/style.css">
+    <script type="text/javascript" src="../src/js/nav.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="sidebar-nav">
+
+            <!-- sidebar navigation -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="../index.html">About</a>
+                <a href="../javascript.html">Pure JS</a>
+                <a href="../blog.html">Blog</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+
+            <!-- Use any element to open the sidenav -->
+            <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+
+        </nav>
+
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <article>
+                        <h1>
+                            Backend vs. Frontend – ein Vergleich aus Testerperspektive
+                        </h1>
+                        <p>
+                            Zum 01. Juli habe ich in ein Backend-Team gewechselt. Seitdem beschäftige ich mich mit Datenbanken und Rest-APIs in einer Microservice-Architektur. In diesem Artikel schildere ich, wie sehr sich die Arbeit als Tester im Frontend und Backend unterscheidet.
+                        </p>
+                        <h2>
+                            Testen im Frontend
+                        </h2>
+                        <p>
+                            Wer als Softwaretester anfängt, macht das meistens im Frontend. So war es auch bei mir. Eine übliche User Story beschreibt abstrakt, wie sich die GUI einer Anwendung / Website verändern soll oder wie neue Komponenten erscheinen sollen. Meist ist eine solche Story angereichert mit Designs, Wireframes oder Screenshots. Je nach Vorarbeit steht das Design so fest, dass ein Prototyp pixelgenau zeigt, wie die Anwendung später auszusehen hat. Für den Tester macht es das recht einfach: Er muss Neuentwicklungen gegen diese Anforderungen prüfen und testet idealerweise auch, wie sich die Software in Grenzbereichen, unter verschiedenen Systemen (z.B. Betriebssysteme oder Browser) oder im Fehlerfall verhält. Kennt er das Projekt bereits, ist er außerdem imstande, durch Regressionstests festzustellen, ob ältere Komponenten und Features auch weiterhin funktionieren.
+                        </p>
+                        <p>
+                            Zusammenfassend lässt sich sagen: Im Frontend ist ein Auge für's Detail, Geduld und Fleiß gefragt. Die technischen Hürden sind eher gering und selbst Backend-Anbindungen lassen sich über das Frontend unkompliziert testen. Letztlich bewegt sich der Tester eben in der Benutzerschnittstelle. Und die ist im Idealfall selbsterklärend.
+                        </p>
+                        <h2>Testen im Backend</h2>
+                        <p>
+                            User Stories im Backend sind wesentlich abstrakter und meist dem endgültigen Anwendungsfall ferner. Ein Beispiel: Während das Frontend immer etwas abbildet, was irgendwann mal ein Mensch sehen und/oder verwenden wird, dient das Backend oftmals dafür, Schnittstellen bereitzustellen, die andere Systeme oder Services abfragen bzw. konsumieren. Dabei ist nicht grundsätzlich gegeben, dass ein Mensch diese Funktionalitäten selbst verwenden wird, sondern dies im Hintergrund durch die Anwendung geschieht.
+                        </p>
+                        <p>
+                            Für den Tester bedeutet das Folgendes: Um ein Backend zu testen, ohne das Frontend zu verwenden, muss er in der Regel Requests an eine API senden und prüfen, ob der jeweilige Response dem erwarteten Response entspricht. Dies geschieht zum Beispiel über einen API-Client wie Postman. Da ein Response oft lediglich ein Status-Code ist, der dem Tester sowas sagt wie <i>200 OK oder 404 not found</i>, muss der Tester zusätzlich die Logs des Service heranziehen.
+                        </p>
+                        <p>
+                            Neben der Weiterentwicklung von APIs wird im Backend oft an Datenbanken gearbeitet. Für einen Tester reicht ein Grundwissen zu SQL (bzw. der jeweiligen Datenbanksprache), um zu testen, ob die richtigen Daten in den richtigen Fällen in der Datenbank abgelegt werden und ob Regeln für die Datenbank, z. B. ein <i>not null constraint</i>, korrekt implementiert wurden.
+                        </p>
+                        <h3>Mein Fazit nach 2 Monaten Backend-Testing</h3>
+                        <p>
+                            Steigt man in ein neues Projekt ein, ist die Arbeit im Frontend komfortabler. Es ist einfacher, die Software kennenzulernen, Anwendungsfälle zu verstehen und sich in den Nutzer hineinversetzen zu können. Dafür ist es sehr zeitaufwändig, Logik der Software zu testen, die aus dem Backend stammt. Zudem kann es den Tester auf Dauer langweilen, immer und immer wieder die selbe GUI zu verwenden. Dies ist vor allem bei manuellen Regressionstests der Fall. Insbesondere deshalb ist eine solide Testabdeckung mit automatisierten End-2-End Tests wertvoll.
+                        </p>
+                        <p>
+                            Auch wenn der Start ins Backend herausfordernd ist, lohnt sich der erste Schmerz. Man taucht schnell sehr viel tiefer in die technischen Finessen der Software ein und ist dazu gezwungen, die Prozesse und Architektur der Anwendung bzw. das Zusammenspiel einzelner Services im Falle einer Microservice-Architektur zu verstehen. Ist diese Hürde genommen, macht das manuelle Testen des Backends insofern mehr Spaß, als dass der Diskussionsbedarf darüber, was richtig, was falsch, was gut oder was schlecht ist, deutlich kleiner ist. Soll ein Endpunkt in einem Szenario den Code 200 zurückgeben und tut dies, ist der Testfall erfolgreich. Nachträglich über das Design der Implementierung zu disktuieren, ist eher unwahrscheinlich. Im Frontend hingegen habe ich genau das sehr oft erlebt: Gerade dann, wenn ein Feature fertig ist, wird gerne noch mal über Design und UX diskutiert. Visuelles ist eben sehr subjektiv.
+                        </p>
+                        <h3>Abschließende Worte</h3>
+                        <p>
+                            Für mich als Tester ist es wünschenswert, mit allen Fassaden einer Anwendung in Berührung zu kommen. Sich mit dem Frontend auseinanderzusetzen hilft dabei, eine bessere Vorstellung von dem Endprodukt zu bekommen. Das Backend zu verstehen und zu testen, eröffnet einen tiefen Blick hinter die Fassade. Hat man die Chance, beides zumindest zu Teilen abzudecken, ist die Abwechslung am Größten und das Verständnis über sinnvolle und notwendige Testfälle nimmt zu.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <nav id="footer-nav">
+
+        </nav>
+
+    </footer>
+</body>
+
+</html>
