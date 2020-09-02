@@ -7,23 +7,42 @@
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <script type="text/javascript" src="src/js/nav.js"></script>
     <script type="text/javascript" src="src/js/blog.js"></script>
+    
 </head>
 
 <body>
     <header id="header">
-        <nav class="sidebar-nav">
-
-            <!-- sidebar navigation -->
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="index.html">About</a>
-                <a href="javascript.html">Pure JS</a>
-                <a href="blog.html">Blog</a>
-                <a href="impressum.html">Impressum</a>
+        <nav>
+            <div id="desktop-nav">
+                <div class="topnav">
+                    <a href="index.html" class="topnav-left">About</a>
+                    <a href="javascript.html" class="topnav-left">Pure JS</a>
+                    <a href="blog.html" class="topnav-left">Blog</a>
+                    <a href="impressum.html" class="topnav-left">Impressum</a>                    
+                    <a href="#" class="fa fa-xing topnav-right"></a>
+                    <a href="#" class="fa fa-github topnav-right"></a>
+                </div>
             </div>
 
-            <!-- Use any element to open the sidenav -->
-            <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+            <div id="mobile-nav">
+
+                <!-- sidebar navigation -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">About</a>
+                    <a href="javascript.html">Pure JS</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="impressum.html">Impressum</a>    
+                    
+                    <div class="sidenav-social">
+                        <a href="#" class="fa fa-xing"></a>
+                        <a href="#" class="fa fa-github"></a>
+                    </div>
+                </div>                
+
+                <!-- Use any element to open the sidenav -->
+                <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+            </div>
 
         </nav>
 
@@ -74,22 +93,6 @@
                     </p>
                 </div>
             </div>
-            <!-- 
-            <div class="row blogEntry">
-                <div class="col-2 blogImage">
-                    <span class="helper"></span><img src="./src/img/111elf_banner.jpg">
-                </div>
-
-                <div class="col-4 blogPreview">
-                    <h2>
-                        Warum diese Seite?
-                    </h2>
-                    <p class="shortDescription">
-                        Als Softwaretester programmiere ich beruflich hauptsächlich automatisierte Tests. Dabei fehlt mir das Gefühl, selbst etwas zu "erschaffen". Ich möchte diese Seite nutzen, um selbst ein kleines Webprojekt aufzubauen, weiterzuentwicklen und zu pflegen.
-                    </p>
-                </div>
-            </div>
-            -->
         </div>
     </main>
 

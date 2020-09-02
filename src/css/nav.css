@@ -7,6 +7,47 @@ White:        #FFF
 Green:        #2E933C
 */
 
+/* Add a black background color to the top navigation */
+.topnav {
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 3rem;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    color: #f2f2f2 !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+.topnav-left {
+      float: left;
+  }
+
+.topnav-right {
+    float: right;
+}
+
+.topnav > .topnav-right {
+    padding-top: 14px;
+    font-size: 1.5rem;
+}
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: #F8F32B !important;
+    transition: 0.5s;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #F8F32B;
+    color: white;
+  }
 
 /* side navigation menu */
 
@@ -19,22 +60,42 @@ Green:        #2E933C
     left: 0;
     background-color: #000;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 120px;
     transition: 0.5s;
     text-align: center;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
+.sidenav-social {
+    margin-top: 4rem;
+    display: inline-block;
+}
+
+.sidenav > .sidenav-social a {
+    margin: 0 16px;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.sidenav > .sidenav-social > .fa  {
+    float: left;
+    color: #F8F32B;
+}
+
+.sidenav > .sidenav-social > a:hover  {
+    font-size: 3rem;
+}
+
+.sidenav a, .sidenav a:visited {
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
-    font-size: 1.8rem;
-    color: #FFF !important;
+    font-size: 1.5rem;
+    color: #FFF;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #F8F32B !important;
+    color: #F8F32B;
 }
 
 
@@ -67,5 +128,17 @@ Green:        #2E933C
     }
     .sidenav a {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    #mobile-nav {
+        display: none;
     }
 }
