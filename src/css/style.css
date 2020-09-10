@@ -9,15 +9,16 @@
 /* Colors *
 
 Red:          #A22C29
-Black:        #000
-Yellow:       #F8F32B
+Black:        #333
+Yellow:       #f0da50
 White:        #FFF
 Green:        #2E933C
-Orange:       #FF9933
+Orange:       #D47524
 */
 
 * {
     box-sizing: border-box;
+    color: #333;
 }
 
 a {
@@ -34,16 +35,15 @@ a:visited {
 
 h2>a {
     text-decoration: none;
-    color: #000 !important;
+    color: #333 !important;
 }
 
 h2>a::visited {
-    color: #000 !important;
+    color: #333 !important;
 }
 
 body {
     font-size: 16px;
-    color: 111;
     margin: 0;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
 }
@@ -60,7 +60,7 @@ article {
 
 .exercise {
     margin-bottom: 2rem;
-    border: 1px solid #151515;
+    border: 1px solid #333;
 }
 
 .col-6>h1 {

@@ -1,8 +1,8 @@
 /* Colors *
 
 Red:          #A22C29
-Black:        #000
-Yellow:       #F8F32B
+Black:        #333
+Yellow:       #f0da50B
 White:        #FFF
 Green:        #2E933C
 */
@@ -50,7 +50,7 @@ Green:        #2E933C
 
 #jumpGame {
     margin: 0px auto;
-    background-color: #F8F32B;
+    background-color: #f0da50;
     border: 1px solid #151515;
     width: 50%;
     min-width: 150px;

@@ -40,7 +40,7 @@ document.getElementById("reactionGameStartButton").addEventListener("click", () 
                 randomColor = "#A22C29";
                 break;
             case 2:
-                randomColor = "#F8F32B";
+                randomColor = "#F0DA50";
                 break;
             case 3:
                 randomColor = "#2E933C";

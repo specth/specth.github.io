@@ -16,7 +16,7 @@ class Renderer {
         box.style.left = "40%";
         box.style.width = "30px";
         box.style.height = "30px";
-        box.style.backgroundColor = "#000";
+        box.style.backgroundColor = "#333";
         box.style.borderRadius = "100%";
         this.element.appendChild(box);
         this.box = box;

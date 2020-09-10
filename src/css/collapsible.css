@@ -1,8 +1,8 @@
 /* Colors *
 
 Red:          #A22C29
-Black:        #000
-Yellow:       #F8F32B
+Black:        #333
+Yellow:       #f0da50B
 White:        #FFF
 Green:        #2E933C
 */
@@ -11,7 +11,7 @@ Green:        #2E933C
 /* Style the button that is used to open and close the collapsible content */
 
 .collapsible {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     cursor: pointer;
     padding: 18px;
@@ -35,7 +35,7 @@ Green:        #2E933C
 }
 
 #collapsible__indicator.active {
-    border-right: 7px solid #F8F32B;
+    border-right: 7px solid #f0da50;
 }
 
 #collapsible__indicator.hidden {
@@ -47,7 +47,7 @@ Green:        #2E933C
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 
 .collapsible:hover {
-    color: #F8F32B;
+    color: #f0da50;
 }
 
 
