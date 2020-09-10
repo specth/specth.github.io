@@ -7,46 +7,11 @@
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <script type="text/javascript" src="src/js/nav.js"></script>
     <script type="text/javascript" src="src/js/blog.js"></script>
-    
+    <script type="text/javascript" src="src/js/components.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <nav>
-            <div id="desktop-nav">
-                <div class="topnav">
-                    <a href="index.html" class="topnav-left">About</a>
-                    <a href="javascript.html" class="topnav-left">Vanilla JS</a>
-                    <a href="blog.html" class="topnav-left active">Blog</a>
-                    <a href="impressum.html" class="topnav-left">Impressum</a>                    
-                    <a href="#" class="fa fa-xing topnav-right"></a>
-                    <a href="#" class="fa fa-github topnav-right"></a>
-                </div>
-            </div>
-
-            <div id="mobile-nav">
-
-                <!-- sidebar navigation -->
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="index.html">About</a>
-                    <a href="javascript.html">Pure JS</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="impressum.html">Impressum</a>    
-                    
-                    <div class="sidenav-social">
-                        <a href="#" class="fa fa-xing"></a>
-                        <a href="#" class="fa fa-github"></a>
-                    </div>
-                </div>                
-
-                <!-- Use any element to open the sidenav -->
-                <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
-            </div>
-            <div id="header-vanilla"></div>
-        </nav>
-
-    </header>
+    <vanilla-header></vanilla-header>
 
     <main id="main">
         <div class="container blog">
@@ -96,12 +61,7 @@
         </div>
     </main>
 
-    <footer id="footer">
-        <nav id="footer-nav">
-
-        </nav>
-
-    </footer>
+    <vanilla-footer></vanilla-footer>
 </body>
 
 </html>
