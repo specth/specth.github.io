@@ -8,6 +8,9 @@ function closeNav() {
 
 function hightlightCurrentPage() {
     switch (window.location.pathname) {
+        case ("/"):
+            document.getElementById("desktop-nav-about").classList.add("active");
+            break;
         case ("/index.html"):
             document.getElementById("desktop-nav-about").classList.add("active");
             break;
@@ -23,7 +26,6 @@ function hightlightCurrentPage() {
         default:
             break;
     }
-    console.log(window.location.pathname);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
