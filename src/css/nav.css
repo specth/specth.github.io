@@ -124,6 +124,18 @@ Green:        #2E933C
     cursor: pointer;
 }
 
+.botnav {
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 3rem;
+    background-color: #333;
+    overflow: hidden;
+  }
+
+footer > .botnav p, footer > .botnav p i {
+    text-align: center;
+    color: white;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 

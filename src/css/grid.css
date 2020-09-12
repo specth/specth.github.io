@@ -2,7 +2,7 @@
 
 Red:          #A22C29
 Black:        #222
-Yellow:       #f0da50B
+Yellow:       #f0da50
 White:        #FFF
 Green:        #2E933C
 */
@@ -12,7 +12,7 @@ Green:        #2E933C
 
 .container {
     margin: auto;
-    width: 60%;
+    width: 80%;
 }
 
 @media (max-width: 480px) {
@@ -39,7 +39,7 @@ Green:        #2E933C
 [class*='col-'] {
     float: left;
     min-height: 1px;
-    padding: .8rem;
+    padding: .8rem 1.6rem;
     position: relative;
 }
 

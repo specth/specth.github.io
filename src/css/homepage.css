@@ -1,0 +1,48 @@
+#main i.fa {
+    margin-right: .8rem;
+    font-size: 1.2rem;
+}
+
+#author-img {
+    width: 100%;
+    height: auto;
+    margin: inherit;
+}
+
+#about-me-image {
+    position: relative;
+}
+
+.language-level {
+    margin-left: .4rem;
+}
+
+.company-name {
+    margin: -.8rem 0 -.4rem 0;
+    font-size: .8rem;
+}
+
+#about-me-image h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: .8rem 1.6rem;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.skill-metric-background {
+    position: relative;
+    border-radius: 16px;
+    width: 100%;
+    background-color: #F1F1F1;
+}
+
+.skill-metric-scala {
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    background-color: #f0da50;
+    font-size: 0.8rem;
+    padding: 2px;
+    text-align: center;
+}

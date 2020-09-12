@@ -2,9 +2,20 @@ class VanillaFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
         `
-        <!-- <footer id="footer">
-        <div id="footer-desktop" class="clearfix"></div>
-        </footer> -->
+        <footer id="footer">
+            <div class="botnav">
+                <!-- <a href="index.html" class="topnav-left" id="desktop-nav-about">About</a>
+                <a href="javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
+                <a href="blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
+                <a href="impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
+                <a href="#" class="fa fa-xing topnav-right"></a>
+                <a href="#" class="fa fa-github topnav-right"></a> -->
+                <p>Website made with <i class="fa fa-html5" aria-hidden="true"></i> 
+                + <i class="fa fa-css3" aria-hidden="true"></i> 
+                + <i class="fa fa-heart" aria-hidden="true"></i>
+            </div>
+        
+        </footer>
         `;
     }
 }

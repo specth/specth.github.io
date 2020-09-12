@@ -14,10 +14,22 @@ Orange:       #D47524
     color: #333;
 }
 
+hr {
+    margin: 1.6rem auto;
+    border: none;
+    height: 0.1rem;
+    background-color: #f0da50;
+}
+
 html, body {
     font-size: 16px;
     margin: 0;
     font-family: 'Raleway', 'Lato', 'Helvetica Neue', 'Arial', sans-serif;
+    
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -61,36 +73,22 @@ article {
     margin-top: 16;
 }
 
-#author-img {
-    border-radius: 100%;
-    max-width: 400px;
-    min-width: 250px;
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-
 #header-vanilla {
     background-color: #f0da50;
     width: 100%;
-    height: .5rem;
+    height: 8px;
 }
 
-#footer {
-    position: relative;
-    padding-top: 20px;
-}
-
-#footer-desktop {
-    bottom: 0;
-    height: 20px;
-    width: 100%;
+vanilla-footer {
+    margin-top: auto;
+    padding-top: 8px;
     background-color: #f0da50;
 }
 
-.clearfix {
-    overflow: auto;
+#footer > div {
+    padding-bottom: 48px;
+    background-color: #333;
+    color: #fff;
 }
 
 @media (max-width: 768px) {
