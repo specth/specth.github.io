@@ -57,6 +57,32 @@ article {
     margin-bottom: 4rem;
 }
 
+/* Tooltips */
+.tooltip {
+    position: relative;
+    margin-top: 16px;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    max-width: 360px;
+    min-width: 180px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: .4rem;
+    /* Position the tooltip */
+    position: absolute;
+    margin-left: .4rem;
+    bottom: 0;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
 #main {
     position: relative;
     transition: margin-left .5s;
