@@ -69,6 +69,7 @@ document.getElementById("reactionGameStartButton").addEventListener("click", () 
 
     /* Execute displayTarget function to start the game */
     displayTarget();
+    
     /* Listen for clicks on the target to make the game playable */
     target.addEventListener("click", function() {
         timeOfReaction = Date.now();

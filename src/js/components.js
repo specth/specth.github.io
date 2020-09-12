@@ -3,16 +3,19 @@ class VanillaFooter extends HTMLElement {
         this.innerHTML =
         `
         <footer id="footer">
-            <div class="botnav">
-                <!-- <a href="index.html" class="topnav-left" id="desktop-nav-about">About</a>
-                <a href="javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
-                <a href="blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
-                <a href="impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
-                <a href="#" class="fa fa-xing topnav-right"></a>
-                <a href="#" class="fa fa-github topnav-right"></a> -->
-                <p>Website made with <i class="fa fa-html5" aria-hidden="true"></i> 
-                + <i class="fa fa-css3" aria-hidden="true"></i> 
-                + <i class="fa fa-heart" aria-hidden="true"></i>
+            <div class="footer-bot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>
+                                Website made with <i class="fab fa-html5"></i> 
+                                + <i class="fab fa-css3" aria-hidden="true"></i> 
+                                + <i class="fab fa-js" aria-hidden="true"></i> <br />
+                                No Framework. No Template. Vanilla JS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         
         </footer>
@@ -32,8 +35,8 @@ class VanillaHeader extends HTMLElement {
                     <a href="javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
                     <a href="blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
                     <a href="impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
-                    <a href="#" class="fa fa-xing topnav-right"></a>
-                    <a href="#" class="fa fa-github topnav-right"></a>
+                    <a href="#" class="fab fa-xing topnav-right"></a>
+                    <a href="#" class="fab fa-github topnav-right"></a>
                 </div>
             </div>
 
@@ -48,8 +51,8 @@ class VanillaHeader extends HTMLElement {
                     <a href="impressum.html">Impressum</a>    
                     
                     <div class="sidenav-social">
-                        <a href="#" class="fa fa-xing"></a>
-                        <a href="#" class="fa fa-github"></a>
+                        <a href="#" class="fab fa-xing"></a>
+                        <a href="#" class="fab fa-github"></a>
                     </div>
                 </div>                
 

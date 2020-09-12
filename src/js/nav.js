@@ -1,12 +1,12 @@
-function openNav() {
+let openNav = function() {
     document.getElementById("mySidenav").style.width = "100%";
 }
 
-function closeNav() {
+let closeNav = function() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-function hightlightCurrentPage() {
+let hightlightCurrentPage = function() {
     switch (window.location.pathname) {
         case ("/"):
             document.getElementById("desktop-nav-about").classList.add("active");

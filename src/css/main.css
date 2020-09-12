@@ -85,10 +85,16 @@ vanilla-footer {
     background-color: #f0da50;
 }
 
-#footer > div {
-    padding-bottom: 48px;
+.footer-bot {
     background-color: #333;
-    color: #fff;
+    overflow: hidden;
+  }
+
+/* Footer website information text */
+footer > .footer-bot p, footer > .footer-bot p i {
+    padding: .2rem 0 .4rem 0;
+    color: #F1F1F1;
+    text-align: center;
 }
 
 @media (max-width: 768px) {

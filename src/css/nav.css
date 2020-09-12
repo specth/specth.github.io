@@ -37,22 +37,22 @@ Green:        #2E933C
     font-size: 1.5rem;
 }
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    color: #333;
-    background-color: #f0da50;
-  }
+/* Add a color to the active/current link */
+.topnav a.active {
+color: #333;
+background-color: #f0da50;
+}
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    color: #f0da50;
+/* Change the color of links on hover */
+.topnav a:hover {
+color: #f0da50;
+transition: 0.2s;
+}
+
+.topnav a.active:hover {
+    color: #000;
     transition: 0.2s;
-  }
-
-  .topnav a.active:hover {
-      color: #000;
-      transition: 0.2s;
-  }
+}
 
 /* side navigation menu */
 
@@ -81,7 +81,7 @@ Green:        #2E933C
     font-size: 2rem;
 }
 
-.sidenav > .sidenav-social > .fa  {
+.sidenav > .sidenav-social > .fab {
     float: left;
     color: #f0da50;
 }
@@ -122,19 +122,6 @@ Green:        #2E933C
 
 #openMenuBtn:hover {
     cursor: pointer;
-}
-
-.botnav {
-    padding-left: 32px;
-    padding-right: 32px;
-    height: 3rem;
-    background-color: #333;
-    overflow: hidden;
-  }
-
-footer > .botnav p, footer > .botnav p i {
-    text-align: center;
-    color: white;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
