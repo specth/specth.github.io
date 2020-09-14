@@ -117,14 +117,22 @@ vanilla-footer {
     overflow: hidden;
 }
 
+.footer-bot>.container {
+    margin: .8rem auto 1.6rem auto;
+}
+
 
 /* Footer website information text */
 
 footer>.footer-bot p,
 footer>.footer-bot p i {
-    padding: .2rem 0 .4rem 0;
+    margin: .2rem 0;
     color: #F1F1F1;
     text-align: center;
+}
+
+#footer-made-with {
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {

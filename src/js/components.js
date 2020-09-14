@@ -1,17 +1,19 @@
 class VanillaFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
-        `
+            `
         <footer id="footer">
             <div class="footer-bot">
                 <div class="container">
                     <div class="row">
                         <div class="col-6">
-                            <p>
-                                Website made with <i class="fab fa-html5"></i> 
+                            <p id="footer-made-with">
+                                <i class="fab fa-html5" aria-hidden="true"></i> 
                                 + <i class="fab fa-css3" aria-hidden="true"></i> 
                                 + <i class="fab fa-js" aria-hidden="true"></i> <br />
-                                No Framework. No Template. Vanilla JS.
+                            </p>
+                            <p>
+                                Kein Framework. Kein Template. Vanilla JS.
                             </p>
                         </div>
                     </div>
@@ -26,7 +28,7 @@ class VanillaFooter extends HTMLElement {
 class VanillaHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
-        `
+            `
         <header id="header">
         <nav>
             <div id="desktop-nav">
