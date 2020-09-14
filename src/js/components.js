@@ -33,7 +33,7 @@ class VanillaHeader extends HTMLElement {
         <nav>
             <div id="desktop-nav">
                 <div class="topnav">
-                    <a href="index.html" class="topnav-left" id="desktop-nav-about">About</a>
+                    <a href="index.html" class="topnav-left" id="desktop-nav-about">Über mich</a>
                     <a href="javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
                     <a href="blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
                     <a href="impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
@@ -47,7 +47,7 @@ class VanillaHeader extends HTMLElement {
                 <!-- sidebar navigation -->
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="index.html">About</a>
+                    <a href="index.html">Über mich</a>
                     <a href="javascript.html">Vanilla JS</a>
                     <a href="blog.html">Blog</a>
                     <a href="impressum.html">Impressum</a>    
