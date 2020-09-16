@@ -4,13 +4,18 @@
 }
 
 #author-img {
-    width: 100%;
+    width: calc(100% + 2.4rem);
     height: auto;
-    margin: inherit;
+    margin-top: -1.2rem;
+    margin-left: -1.2rem;
 }
 
 #about-me-image {
     position: relative;
+}
+
+.shadow > h2 {
+    margin: 0;
 }
 
 .language-level {
