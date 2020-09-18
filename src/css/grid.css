@@ -11,11 +11,9 @@ Green:        #2E933C
 /* === GRID SYSTEM === */
 
 .container {
-    margin: auto;
     width: 80%;
     max-width: 1200px;
-    margin-bottom: 2.4rem;
-    margin-top: 1.6rem;
+    margin: 1.6rem auto 2.4rem auto;
 }
 
 @media (max-width: 480px) {
