@@ -4,7 +4,7 @@
 
 .blog-post-thumbnail {
     width: calc(100% + 2.4rem);
-    height: 150px;
+    height: 200px;
     object-fit: cover;
     margin-top: -1.2rem;
     margin-left: -1.2rem;

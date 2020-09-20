@@ -26,6 +26,7 @@ Green:        #2E933C
 
 .row {
     margin: auto auto 1rem auto;
+    display: flex;
 }
 
 .row-dark {
@@ -44,6 +45,8 @@ Green:        #2E933C
     min-height: 1px;
     padding: .8rem;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .col-1 {
@@ -91,6 +94,10 @@ Green:        #2E933C
 
     .col-4 {
         width: 100%;
+    }
+
+    .row {
+        display: inline-block;
     }
 }
 
