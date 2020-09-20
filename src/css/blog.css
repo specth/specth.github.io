@@ -9,3 +9,16 @@
     margin-top: -1.2rem;
     margin-left: -1.2rem;
 }
+
+.blog {
+    display: flex;
+}
+
+.blog .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog [class*='col-'] {
+    display: flex;
+}

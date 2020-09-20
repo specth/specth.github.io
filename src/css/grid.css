@@ -14,7 +14,6 @@ Green:        #2E933C
     width: 80%;
     max-width: 1200px;
     margin: 1.6rem auto 2.4rem auto;
-    display: flex;
 }
 
 @media (max-width: 480px) {
@@ -27,9 +26,6 @@ Green:        #2E933C
 
 .row {
     margin: auto auto 1rem auto;
-    display: flex;
-    flex-wrap: wrap;
-
 }
 
 .row-dark {
@@ -44,10 +40,10 @@ Green:        #2E933C
 }
 
 [class*='col-'] {
+    float: left;
     min-height: 1px;
     padding: .8rem;
     position: relative;
-    display: flex;
 }
 
 .col-1 {
@@ -95,10 +91,6 @@ Green:        #2E933C
 
     .col-4 {
         width: 100%;
-    }
-
-    .row {
-        flex-direction: column;
     }
 }
 
