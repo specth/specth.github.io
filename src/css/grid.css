@@ -42,7 +42,7 @@ Green:        #2E933C
 [class*='col-'] {
     float: left;
     min-height: 1px;
-    padding: .8rem 1.6rem;
+    padding: .8rem;
     position: relative;
 }
 
@@ -70,18 +70,25 @@ Green:        #2E933C
     .col-1 {
         width: 33.333%;
     }
+
+    .container {
+        width: 90%;
+    }
 }
 
 @media (max-width: 768px) {
     .col-1 {
         width: 50%;
     }
+
     .col-2 {
         width: 100%;
     }
+
     .col-3 {
         width: 100%;
     }
+
     .col-4 {
         width: 100%;
     }

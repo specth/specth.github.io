@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <rect x="0" y="0" width="800" height="600" style="fill:rgb(46,147,60);"/>
-    <g id="Folders" transform="matrix(4.39715,1.62597e-31,5.41991e-32,4.39715,-1742.24,-629.743)">
-        <path d="M500.7,189.8L473.6,189.8L465.1,200.8L465.1,233.8C465.1,234.4 465.5,234.8 466.1,234.8L508.1,234.8C508.7,234.8 509.1,234.4 509.1,233.8L509.1,200.8L500.7,189.8ZM474,191.8L500,191.8L507,200.8L493,200.8C493,204.1 490.3,206.8 487,206.8C483.7,206.8 481,204.1 481,200.8L467,200.8L474,191.8ZM507,232.8L467,232.8L467,218.8L479.1,218.8C479.6,222.7 483,225.8 487,225.8C491,225.8 494.4,222.7 494.9,218.8L507,218.8L507,232.8ZM481.1,218.8L493,218.8C492.5,221.6 490.1,223.8 487.1,223.8C484.1,223.8 481.6,221.6 481.1,218.8ZM507,216.8L467,216.8L467,202.8L479.3,202.8C480.2,206.2 483.3,208.8 487,208.8C490.7,208.8 493.8,206.2 494.7,202.8L507,202.8L507,216.8Z" style="fill-rule:nonzero;"/>
+<svg width="100%" height="100%" viewBox="0 0 799 403" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="ArtBoard1" transform="matrix(0.986669,0,0,1,-3.36811,-84.3252)">
+        <rect x="3.414" y="84.325" width="808.887" height="402.632" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="3.414" y="84.325" width="808.887" height="402.632"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1.01351,0,0,1,2.75329,0.325239)">
+                <rect x="0" y="0" width="800" height="600" style="fill:rgb(46,147,60);"/>
+            </g>
+            <g id="Folders" transform="matrix(4.45656,1.62597e-31,5.49314e-32,4.39715,-1763.03,-629.418)">
+                <path d="M500.7,189.8L473.6,189.8L465.1,200.8L465.1,233.8C465.1,234.4 465.5,234.8 466.1,234.8L508.1,234.8C508.7,234.8 509.1,234.4 509.1,233.8L509.1,200.8L500.7,189.8ZM474,191.8L500,191.8L507,200.8L493,200.8C493,204.1 490.3,206.8 487,206.8C483.7,206.8 481,204.1 481,200.8L467,200.8L474,191.8ZM507,232.8L467,232.8L467,218.8L479.1,218.8C479.6,222.7 483,225.8 487,225.8C491,225.8 494.4,222.7 494.9,218.8L507,218.8L507,232.8ZM481.1,218.8L493,218.8C492.5,221.6 490.1,223.8 487.1,223.8C484.1,223.8 481.6,221.6 481.1,218.8ZM507,216.8L467,216.8L467,202.8L479.3,202.8C480.2,206.2 483.3,208.8 487,208.8C490.7,208.8 493.8,206.2 494.7,202.8L507,202.8L507,216.8Z" style="fill-rule:nonzero;"/>
+            </g>
+        </g>
     </g>
 </svg>
