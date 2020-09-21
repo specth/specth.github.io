@@ -12,6 +12,7 @@
 
 .blog {
     display: flex;
+    flex-direction: column;
 }
 
 .blog .row {
