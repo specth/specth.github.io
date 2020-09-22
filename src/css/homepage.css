@@ -1,8 +1,3 @@
-#main i {
-    margin-right: .4rem;
-    font-size: 1.2rem;
-}
-
 #author-img {
     width: calc(100% + 2.4rem);
     height: auto;
@@ -14,7 +9,7 @@
     position: relative;
 }
 
-.shadow > h2 {
+.shadow>h2 {
     margin: 0;
 }
 

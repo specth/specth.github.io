@@ -1,12 +1,12 @@
-let openNav = function() {
+let openNav = function () {
     document.getElementById("mySidenav").style.width = "100%";
 }
 
-let closeNav = function() {
+let closeNav = function () {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-let hightlightCurrentPage = function() {
+let hightlightCurrentPage = function () {
     switch (window.location.pathname) {
         case ("/"):
             document.getElementById("desktop-nav-about").classList.add("active");
@@ -24,10 +24,11 @@ let hightlightCurrentPage = function() {
             document.getElementById("desktop-nav-impressum").classList.add("active");
             break;
         default:
+            document.getElementById("desktop-nav-blog").classList.add("active");
             break;
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     hightlightCurrentPage();
 });

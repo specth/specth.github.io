@@ -33,10 +33,10 @@ class VanillaHeader extends HTMLElement {
         <nav>
             <div id="desktop-nav">
                 <div class="topnav">
-                    <a href="index.html" class="topnav-left" id="desktop-nav-about">Über mich</a>
-                    <a href="javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
-                    <a href="blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
-                    <a href="impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
+                    <a href="/index.html" class="topnav-left" id="desktop-nav-about">Über mich</a>
+                    <a href="/javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
+                    <a href="/blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
+                    <a href="/impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
                     <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing topnav-right"></a>
                     <a href="https://github.com/specthor" class="fab fa-github topnav-right"></a>
                 </div>

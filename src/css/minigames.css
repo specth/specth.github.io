@@ -35,7 +35,7 @@ Green:        #2E933C
 }
 
 .gameContent>h2 {
-    display: block;
+    display: inline-block;
 }
 
 .gameContent {
