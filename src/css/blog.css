@@ -17,6 +17,16 @@
     flex-flow: row wrap;
 }
 
+.blog-full-width {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.blog-full-width h1 {
+    text-align: center;
+}
+
 .blog-entry {
     flex: auto;
     margin: 16px;

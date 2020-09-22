@@ -25,7 +25,7 @@ Green:        #2E933C
 }
 
 .row {
-    margin: auto auto 1rem auto;
+    margin: 1rem auto 1rem auto;
 }
 
 .row-dark {
@@ -70,7 +70,6 @@ Green:        #2E933C
     .col-1 {
         width: 33.333%;
     }
-
     .container {
         width: 90%;
     }
@@ -80,15 +79,12 @@ Green:        #2E933C
     .col-1 {
         width: 50%;
     }
-
     .col-2 {
         width: 100%;
     }
-
     .col-3 {
         width: 100%;
     }
-
     .col-4 {
         width: 100%;
     }

@@ -38,6 +38,11 @@ p {
     line-height: 1.5em;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
 button {
     background-color: #f0da50;
     color: #333;
@@ -105,9 +110,11 @@ article {
     padding: 10px;
 }
 
+
 /* Creates a nice shadow border around the element */
+
 .shadow {
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.2),0 2px 10px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 1.2rem;
 }
 
