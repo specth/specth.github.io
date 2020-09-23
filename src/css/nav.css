@@ -17,16 +17,16 @@ Green:        #2E933C
   }
   
   /* Style the links inside the navigation bar */
-  .topnav a {
+.topnav a {
     color: #f2f2f2;
     padding: 13px 16px;
     text-decoration: none;
     font-size: 1.2rem;
-  }
+}
 
 .topnav-left {
       float: left;
-  }
+}
 
 .topnav-right {
     float: right;
@@ -39,14 +39,14 @@ Green:        #2E933C
   
 /* Add a color to the active/current link */
 .topnav a.active {
-color: #333;
-background-color: #f0da50;
+    color: #333;
+    background-color: #f0da50;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-color: #f0da50;
-transition: 0.2s;
+    color: #f0da50;
+    transition: 0.2s;
 }
 
 .topnav a.active:hover {
@@ -54,7 +54,14 @@ transition: 0.2s;
     transition: 0.2s;
 }
 
-/* side navigation menu */
+/* yellow bar below header menu */
+#header-vanilla {
+    background-color: #f0da50;
+    width: 100%;
+    height: 6px;
+}
+
+/* --- side navigation menu --- */
 
 .sidenav {
     height: 100%;
@@ -103,8 +110,7 @@ transition: 0.2s;
     color: #f0da50;
 }
 
-
-/* Position and style the close button (top right corner) */
+/* --- Close button of side menu --- */
 
 .sidenav .closebtn {
     position: absolute;
@@ -123,8 +129,6 @@ transition: 0.2s;
 #openMenuBtn:hover {
     cursor: pointer;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 @media screen and (max-height: 450px) {
     .sidenav {

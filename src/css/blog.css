@@ -7,7 +7,7 @@
 }
 
 
-/* blog grid system */
+/* --- blog grid system --- */
 
 .blog-post {
     margin-top: 0 !important;
@@ -21,19 +21,9 @@
     flex-flow: row wrap;
 }
 
-.blog-full-width {
-    width: 100%;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.blog-full-width h1 {
-    text-align: center;
-}
-
 .blog-entry {
     flex: auto;
-    margin: 16px;
+    margin: 1rem;
     width: calc(20% - 2.4rem);
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 1.2rem;
@@ -60,6 +50,10 @@
 @media (max-width: 768px) {
     .blog-entry {
         width: 100%;
+    }
+
+    .blog-post .row {
+        margin-top: 0;
     }
 
     .blog {

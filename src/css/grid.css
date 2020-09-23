@@ -7,13 +7,12 @@ White:        #FFF
 Green:        #2E933C
 */
 
-
-/* === GRID SYSTEM === */
+/* --- GRID SYSTEM --- */
 
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 1.6rem auto 2.4rem auto;
+    margin: 1.6rem auto;
 }
 
 @media (max-width: 480px) {
@@ -28,15 +27,16 @@ Green:        #2E933C
     margin: 1rem auto 1rem auto;
 }
 
-.row-dark {
-    border: 1px solid grey;
-    margin-bottom: 3rem;
-}
-
 .row::after {
     content: "";
     clear: both;
     display: block;
+}
+
+/* Creates a nice shadow border around the element */
+.shadow {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    padding: 1.2rem;
 }
 
 [class*='col-'] {
@@ -66,6 +66,11 @@ Green:        #2E933C
     width: 100%;
 }
 
+.col-6>h1 {
+    text-align: center;
+    margin-top: 16;
+}
+
 @media (max-width: 1024px) {
     .col-1 {
         width: 33.333%;
@@ -87,6 +92,9 @@ Green:        #2E933C
     }
     .col-4 {
         width: 100%;
+    }
+    .container {
+        margin-top: 0;
     }
 }
 

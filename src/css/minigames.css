@@ -22,24 +22,20 @@ Green:        #2E933C
     margin: 20px;
 }
 
-.startButton {
-    clear: left;
-    display: inline;
-    float: left;
-    margin-right: 10px;
-}
-
-.stopButton {
-    display: inline;
-    float: left;
-}
-
-.gameContent>h2 {
+.gameButton {
     display: inline-block;
+    float: left;
+    margin: .2rem .4rem .2rem 0;
+    width: 130px;
+    outline: none;
 }
 
 .gameContent {
     display: block;
+}
+
+.gameContent>h2 {
+    display: inline;
 }
 
 .gameContent::after {

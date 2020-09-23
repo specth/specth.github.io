@@ -9,20 +9,7 @@
     position: relative;
 }
 
-.shadow>h2 {
-    margin: 0;
-}
-
-.language-level {
-    margin-left: .4rem;
-}
-
-.company-name {
-    margin: -.8rem 0 -.4rem 0;
-    font-size: .8rem;
-}
-
-#about-me-image h2 {
+#about-me-image h3 {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -31,6 +18,34 @@
     transition: all .5s;
 }
 
+/* about me details block */
+
+#about-me-details p {
+    margin: 1rem 0;
+}
+
+#about-me-details i {
+    font-size: 1rem;
+}
+
+.shadow>h2 {
+    margin: 0;
+}
+
+/* --- Berufliche Stationen --- */
+
+.company-name {
+    margin: -.8rem 0 -.4rem 0;
+    font-size: .8rem;
+}
+
+/* --- About me block --- */
+
+.language-level {
+    margin-left: .4rem;
+}
+
+/* grey bar to display max possible progress */
 .skill-metric-background {
     position: relative;
     border-radius: 16px;
@@ -38,6 +53,7 @@
     background-color: #F1F1F1;
 }
 
+/* yellow bar to display skill progress */
 .skill-metric-scala {
     top: 0;
     left: 0;
@@ -46,4 +62,8 @@
     font-size: 0.8rem;
     padding: 2px;
     text-align: center;
+}
+
+#about-me-languages:last-child {
+    margin-bottom: 1rem;
 }
