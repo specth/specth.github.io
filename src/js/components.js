@@ -25,6 +25,23 @@ class VanillaFooter extends HTMLElement {
     }
 }
 
+class VanillaAboutBlock extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML =
+            `
+            <div class="author-container clearfix">
+            <div class="author-image-container">
+            <img class="author-image" src="../src/img/thorsten-specht-foto.1024x1024.jpg">
+            </div>
+            <div class="author-description-container">
+            <strong s>Thorsten Specht</strong>
+            <p>Thorsten Specht ist Softwaretester und bloggt über Themen rund um's Testen, Entwickeln und Gestalten. Auf dieser Seite tobt er sich mit HTML, CSS und JavaScript aus, ohne auf Frameworks, Bibliotheken oder Templates zurückzugreifen.</p>
+            </div>
+            </div>       
+        `;
+    }
+}
+
 class VanillaHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
@@ -70,3 +87,4 @@ class VanillaHeader extends HTMLElement {
 
 customElements.define('vanilla-footer', VanillaFooter);
 customElements.define('vanilla-header', VanillaHeader);
+customElements.define('vanilla-about-block', VanillaAboutBlock);

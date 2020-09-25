@@ -8,7 +8,9 @@ Green:        #2E933C
 Orange:       #D47524
 */
 
+
 /* General global stylings */
+
 * {
     box-sizing: border-box;
     color: #333;
@@ -23,6 +25,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Specific elements styled for all pages */
 
@@ -45,10 +48,15 @@ p {
     line-height: 1.5rem;
 }
 
+article p i {
+    font-size: 16px;
+}
+
 i {
     margin-right: .4rem;
     font-size: 1.2rem;
 }
+
 
 /* headlines */
 
@@ -75,6 +83,16 @@ h3 {
     font-size: 1.2rem;
 }
 
+
+/* --- general stylings --- */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
 /* --- Buttons --- */
 
 button {
@@ -91,6 +109,7 @@ button:hover {
     background-color: #fadf5a;
     cursor: pointer;
 }
+
 
 /* --- Tooltips --- */
 
@@ -159,7 +178,6 @@ footer>.footer-bot p i {
     #header-vanilla {
         display: none;
     }
-
     h1 {
         margin-top: 0;
     }
