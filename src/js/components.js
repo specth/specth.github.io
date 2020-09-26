@@ -64,10 +64,10 @@ class VanillaHeader extends HTMLElement {
                 <!-- sidebar navigation -->
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="index.html">Über mich</a>
-                    <a href="javascript.html">Vanilla JS</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="impressum.html">Impressum</a>    
+                    <a href="/index.html">Über mich</a>
+                    <a href="/javascript.html">Vanilla JS</a>
+                    <a href="/blog.html">Blog</a>
+                    <a href="/impressum.html">Impressum</a>    
                     
                     <div class="sidenav-social">
                         <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing"></a>
