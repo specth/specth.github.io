@@ -1,3 +1,12 @@
+/* Colors *
+
+Red:          #A22C29
+Black:        #333
+Vanilla:      #f0da50
+White:        #FFF
+Green:        #2E933C
+*/
+
 .blog-post-thumbnail {
     width: calc(100% + 2.4rem);
     height: 200px;
@@ -14,8 +23,9 @@
     text-align: justify;
 }
 
-.blog-post .container {
+.blog-post>.container {
     max-width: 800px;
+    margin-top: 0;
 }
 
 .blog {
@@ -35,7 +45,7 @@
 }
 
 
-/* blog post page */
+/* --- blog post page --- */
 
 .author-container {
     border-top: 1px solid #f0da50;
@@ -63,6 +73,31 @@
     font-size: .8rem;
     line-height: 1.2rem;
     margin: .4rem auto;
+}
+
+/* -- blog post head -- */
+.blog-post-head h1 {
+    position: absolute;
+    bottom: 0;
+    left: 17%;
+    width: 66%;
+    background-color: rgba(51, 51, 51, 0.75);
+    padding: 1rem 0;
+    margin: 0;
+    color: #FFF;
+    
+}
+
+.blog-post-head {
+    position: relative;
+    margin: 1rem 0;
+    height: 250px;
+}
+
+.blog-post-head-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 @media (max-width: 2400px) {

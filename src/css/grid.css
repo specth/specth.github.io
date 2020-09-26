@@ -24,7 +24,7 @@ Green:        #2E933C
 }
 
 .row {
-    margin: 1rem auto 1rem auto;
+    padding: 1rem auto 1rem auto;
 }
 
 .row::after {
