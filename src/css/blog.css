@@ -113,6 +113,12 @@ Green:        #2E933C
     }
 }
 
+@media (max-width: 1024px) {
+    .blog-post-details {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .blog-entry {
         width: 100%;
@@ -123,9 +129,6 @@ Green:        #2E933C
     .blog {
         width: 90%;
     }
-    .blog-post-details {
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -133,3 +136,4 @@ Green:        #2E933C
         font-size: .8rem;
     }
 }
+
