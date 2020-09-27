@@ -110,6 +110,43 @@ button:hover {
     cursor: pointer;
 }
 
+/* --- Images --- */
+
+/* This overlay can only be used inside a container with position: relative */
+.image-container-overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.5);
+    text-align: center;
+    display: table;
+}
+
+.image-container-content {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.image-container-overlay * {
+    margin: 1rem;
+    color: #FFF;
+}
+
+@media (max-width: 1024px) {
+    .image-container-overlay * {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container-overlay * {
+        font-size: 1.2rem;
+    }
+}
+
 
 /* --- Tooltips --- */
 
@@ -136,9 +173,18 @@ span.tooltip {
     padding: .4rem;
     /* Position the tooltip */
     position: absolute;
-    left: .4rem;
+    right: 50%;
     bottom: 2rem;
     z-index: 1;
+}
+
+/* Prevent the tooltip to overlap screen border */
+@media (max-width: 480px) {
+        .gameContent .tooltip .tooltiptext {
+        position: fixed;
+        left: 10vw;
+        bottom: 80vh;
+    }
 }
 
 .tooltip:hover .tooltiptext {

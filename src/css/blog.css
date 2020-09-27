@@ -76,18 +76,6 @@ Green:        #2E933C
 }
 
 /* -- blog post head -- */
-.blog-post-head h1 {
-    position: absolute;
-    bottom: 0;
-    left: 17%;
-    width: 66%;
-    background-color: rgba(51, 51, 51, 0.75);
-    padding: 1rem 0;
-    margin: 0;
-    color: #FFF;
-    
-}
-
 .blog-post-head {
     position: relative;
     margin: 1rem 0;
@@ -98,6 +86,13 @@ Green:        #2E933C
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+.blog-post-details {
+    margin: 1rem;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 2400px) {
@@ -127,5 +122,14 @@ Green:        #2E933C
     }
     .blog {
         width: 90%;
+    }
+    .blog-post-details {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post-details {
+        font-size: .8rem;
     }
 }
