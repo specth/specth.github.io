@@ -44,6 +44,14 @@ Green:        #2E933C
     padding: 1.2rem;
 }
 
+.blog-entry-m {
+    min-width: calc(40% - 2.4rem);
+}
+
+.blog-entry-l {
+    min-width: calc(60% - 2.4rem);
+}
+
 
 /* --- blog post page --- */
 
@@ -123,9 +131,11 @@ Green:        #2E933C
     .blog-entry {
         width: 100%;
     }
+
     .blog-post .row {
         margin-top: 0;
     }
+
     .blog {
         width: 90%;
     }
@@ -136,4 +146,3 @@ Green:        #2E933C
         font-size: .8rem;
     }
 }
-
