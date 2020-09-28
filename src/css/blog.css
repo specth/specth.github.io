@@ -83,7 +83,9 @@ Green:        #2E933C
     margin: .4rem auto;
 }
 
+
 /* -- blog post head -- */
+
 .blog-post-head {
     position: relative;
     margin: 1rem 0;
@@ -131,11 +133,9 @@ Green:        #2E933C
     .blog-entry {
         width: 100%;
     }
-
     .blog-post .row {
         margin-top: 0;
     }
-
     .blog {
         width: 90%;
     }
