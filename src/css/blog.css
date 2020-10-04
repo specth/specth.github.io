@@ -40,7 +40,7 @@ Green:        #2E933C
     flex: auto;
     margin: 1rem;
     width: calc(20% - 2.4rem);
-    min-width: 360px;
+    min-width: 320px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
     padding: 1.2rem;
 }
@@ -116,5 +116,9 @@ Green:        #2E933C
 @media (max-width: 480px) {
     .blog-post-details {
         font-size: .8rem;
+    }
+
+    .blog-entry {
+        min-width: 256px;
     }
 }
