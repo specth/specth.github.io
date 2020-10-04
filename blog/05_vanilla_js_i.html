@@ -30,42 +30,71 @@
                             </div>
                         </div>
                         <p>
-                            In den Monaten Mai und Juni war ich Corona-bedingt in Kurzarbeit. Noch vor meinem ersten Tag
-                            in "Zwangsurlaub" habe ich eine Liste mit Themen erstellt, in denen ich mich während dieser
-                            Zeit auseinandersetzen wollte. Zwar beschäftige ich mich schon lange mit Webentwicklung,
-                            doch in der Vergangenheit habe ich sehr früh auf Bootstrap und jQuery zurückgegriffen. Daher
-                            stand an oberster Stelle: Tiefgehendes Verständnis
-                            von HTML5, CSS3 und JavaScript (ES6). Dazu habe ich mir die Kurse "Der ultimative HTML5 und
-                            CSS3 Komplettkurs" von Ruben Winkler sowie den "Modernes JavaScript (ES6)"-Kurs von Jannis
-                            Seemann rausgesucht. Beide Kurse habe ich
-                            durchgearbeitet – und mit dem gelernten Wissen diese Seite hier erstellt.
-                        </p>
-                        <p>
-                            In den folgenden Zeilen schildere ich, warum ich bis jetzt daran festgehalten habe, mit
-                            bloßem HTML, CSS und JavaScript an dieser Seite zu arbeiten und ab wann ich plane, auf ein
-                            Framework und Bibliotheken zurückzugreifen.
+                            In diesem kurzen Blogpost möchte ich mein erstes kleines JavaScript-Programm vorstellen. Es
+                            ist inzwischen gute 3 Jahre her, dass ich den BMI-Rechner geschrieben habe und trotzdem
+                            möchte ich das Beispiel auf meiner Seite behalten. Warum, verrate ich gleich.
                         </p>
                         <h2>
-                            "HTML kann doch jeder"
+                            BMI-Rechner: Ein Blick auf den Code
                         </h2>
                         <p>
-                            Zugegeben: HTML ist mit Sicherheit die einfachste Technologie aus dem Bereich der
-                            Webentwicklung. Dennoch gibt es selbst hierzu mehr zu lernen, als den bloßen Aufbau eines
-                            wohlgeformten HTML-Grundgerüsts. Zum einen wäre da die sinnvolle Verwendung semantischer
-                            Auszeichnungen, zum Beispiel durch die Elemente <em>main, article, header und footer</em>.
+                            Zuerst möchte ich kurz den Code des BMI-Rechners vorstellen. Was sofort auffällt: gar nicht
+                            so viel Text. Tatsächlich hatte ich das Programm im Rahmen eines Tutorials sogar in jQuery
+                            geschrieben, wodurch es nochmal schlanker war. Da ich auf dieser Seite
+                            jedoch wirklich nur reines JavaScript verwenden möchte, habe ich für meine Demo-Seite den
+                            jQuery-Code in Vanilla JS umgeschrieben.
+                        <pre>
+<code >
+    window.addEventListener("load", () => {
+        let bmiObj = document.getElementById("bmi");
+        let heightObj = document.getElementById("height");
+        let weightObj = document.getElementById("weight");
+    
+        let calculateBmi = () => {
+            let height = heightObj.value.replace(",", ".");
+            let weight = weightObj.value.replace(",", ".");
+    
+            let bmi = weight / (height * height);
+            let result = Math.round(bmi * 10) / 10;
+            bmiObj.innerHTML = result;
+    
+            document.getElementById("weight-low").style.display = "none";
+            document.getElementById("weight-normal").style.display = "none";
+            document.getElementById("weight-high").style.display = "none";
+    
+            if (result < 18.5 && result != 0) {
+                document.getElementById("weight-low").style.display = "inline-block";
+            } else if (result >= 25) {
+                document.getElementById("weight-high").style.display = "inline-block";
+            } else if (!Number.isInteger(result)) {
+                bmiObj.innerHTML = "Please enter a valid number";
+            } else if (result >= 18.5 && result < 25) {
+                document.getElementById("weight-normal").style.display = "inline-block";
+            }
+        };
+    
+        let bmiCalculator = document.getElementById("bmi-calculator");
+    
+        bmiCalculator.addEventListener("keyup", () => {
+            calculateBmi();
+        });
+        bmiCalculator.addEventListener("change", () => {
+            calculateBmi();
+        });
+    });
+</code>
+                        </pre>
                         </p>
                         <p>
-                            Weitergehend gibt es Entitäten zu erkunden, um zum Beispiel ungewollte Zeilenumbrüche zu
-                            verhindern oder Sonderzeichen einzufügen. Doch soweit war mir nichts davon neu. Trotzdem war
-                            ich neugierig, wie Ruben Winkler es schafft, einen fast 38-stündigen
-                            Kurs allein mit den Themen HTML und CSS zu füllen. Also habe ich den Kurs weiter
-                            durchgearbeitet.
+                            Im Wesentlichen ist dieser Rechner enorm einfach. Rein logisch gibt es nichts zu
+                            tun, außer den Nutzer die Werte der Variablen der Berechnungsformel zuweisen zu lassen und
+                            anschließend damit die Formel zu befüllen. Zusätzlich dient ein simples if-else-Statement
+                            dazu, die Ausgabe zu erzeugen, was der errechnete Wert bedeutet.
                         </p>
                         <p>
-                            Und siehe da: Mit <em>Emmet</em> hat Ruben mir die erste HTML-Spielerei beigebracht, die mir
-                            bisher unbekannt war. Inzwischen habe ich mich an die Arbeit mit Emmet gewöhnt und bin immer
-                            wieder begeistert, wie viel Tipparbeit
-                            das Toolkit einem abnimmt.
+                            Ein kleines Gimmick ist das Ersetzen eines eingegebenen Kommas durch einen Punkt. So ist der
+                            BMI-Rechner auch für deutschsprachige Nutzer intuitiv zu bedienen.
+
                         </p>
                         <h2>CSS: ein Universum für sich</h2>
                         <p>
