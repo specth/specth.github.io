@@ -24,12 +24,13 @@
                                         Vanilla JavaScript Projekt I: BMI-Rechner
                                     </h1>
                                     <p class="blog-post-details">
-                                        Thorsten Specht | 27.&nbsp;September&nbsp;2020
+                                        Thorsten Specht | 29.&nbsp;September&nbsp;2020
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <p>
+<<<<<<< HEAD
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum in eum molestias cupiditate, amet rerum eos accusamus veritatis debitis deleniti minus aspernatur saepe id similique voluptas doloremque, culpa magni? Fugit.
                         </p>
                         <p>
@@ -58,8 +59,112 @@
                         </h2>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio deleniti molestiae cupiditate hic harum reprehenderit adipisci veniam rem nostrum quam sequi quasi explicabo modi, nesciunt, saepe earum sed aspernatur reiciendis?
+=======
+                            In diesem kurzen Blogpost möchte ich mein erstes kleines JavaScript-Programm vorstellen. Es ist inzwischen gute 3 Jahre her, dass ich den BMI-Rechner geschrieben habe und trotzdem möchte ich das Beispiel auf meiner Seite behalten. Warum, verrate ich gleich.
                         </p>
+                        <h2>
+                            BMI-Rechner: Ein Blick auf den Code
+                        </h2>
                         <p>
+                            Zuerst möchte ich kurz den Code des BMI-Rechners vorstellen. Was sofort auffällt: gar nicht so viel Text. Tatsächlich hatte ich das Programm im Rahmen eines Tutorials sogar in jQuery geschrieben, wodurch es nochmal schlanker war. Da ich auf dieser Seite
+                            jedoch wirklich nur reines JavaScript verwenden möchte, habe ich für meine Demo-Seite den jQuery-Code in Vanilla JS umgeschrieben.
+                            <pre>
+<code >
+window.addEventListener("load", () => {
+    let bmiObj = document.getElementById("bmi");
+    let heightObj = document.getElementById("height");
+    let weightObj = document.getElementById("weight");
+
+    let calculateBmi = () => {
+        let height = heightObj.value.replace(",", ".");
+        let weight = weightObj.value.replace(",", ".");
+
+        let bmi = weight / (height * height);
+        let result = Math.round(bmi * 10) / 10;
+        bmiObj.innerHTML = result;
+
+        document.getElementById("weight-low").style.display = "none";
+        document.getElementById("weight-normal").style.display = "none";
+        document.getElementById("weight-high").style.display = "none";
+
+        if (result < 18.5 && result != 0) {
+            document.getElementById("weight-low").style.display = "inline-block";
+        } else if (result >= 25) {
+            document.getElementById("weight-high").style.display = "inline-block";
+        } else if (!Number.isInteger(result)) {
+            bmiObj.innerHTML = "Please enter a valid number";
+        } else if (result >= 18.5 && result < 25) {
+            document.getElementById("weight-normal").style.display = "inline-block";
+        }
+    };
+
+    let bmiCalculator = document.getElementById("bmi-calculator");
+
+    bmiCalculator.addEventListener("keyup", () => {
+        calculateBmi();
+    });
+    bmiCalculator.addEventListener("change", () => {
+        calculateBmi();
+    });
+});
+</code>
+                        </pre>
+                        </p>
+                        <h3>User-Input und Berechnung</h3>
+                        <p>
+                            Im Wesentlichen ist dieser Rechner enorm einfach. Rein logisch gibt es nichts zu tun, außer den Nutzer die Werte der Variablen zuweisen zu lassen und anschließend damit die Formel zu befüllen.
+                        </p>
+                        <pre>
+<code>
+let bmiObj = document.getElementById("bmi");
+let heightObj = document.getElementById("height");
+let weightObj = document.getElementById("weight");
+
+let calculateBmi = () => {
+    let height = heightObj.value;
+    let weight = weightObj.value;
+
+    let bmi = weight / (height * height);
+    let result = Math.round(bmi * 10) / 10;
+    bmiObj.innerHTML = result;
+};
+</code>
+                        </pre>
+                        <p>
+                            Um anschließend einen Indikator auszugeben, was das Ergebnis bedeutet, werden zunächst die drei möglichen Info-Ausgaben mit <code>display = "none"</code> versteckt. Zusätzlich dient ein simples if-else-Statement dazu, die zutreffende
+                            Info-Ausgabe anzuzeigen oder alternativ einen Fehler auszugeben.
+                        </p>
+                        <pre>
+<code >
+document.getElementById("weight-low").style.display = "none";
+document.getElementById("weight-normal").style.display = "none";
+document.getElementById("weight-high").style.display = "none";
+
+if (result < 18.5 && result != 0) {
+    document.getElementById("weight-low").style.display = "inline-block";
+} else if (result >= 25) {
+    document.getElementById("weight-high").style.display = "inline-block";
+} else if (!Number.isInteger(result)) {
+    bmiObj.innerHTML = "Please enter a valid number";
+} else if (result >= 18.5 && result < 25) {
+    document.getElementById("weight-normal").style.display = "inline-block";
+}
+</code>
+                        </pre>
+                        <h3>Feinheiten: Nutzer-Eingabe standardisieren und EventListener einbauen</h3>
+                        <p>
+                            Da JavaScript mit der englischen Dezimalzahl arbeitet, erhält der Nutzer bisher <code>NaN</code>, wenn er eine Kommazahl (mit Komma statt Punkt) eingibt. Mit den folgenden zwei Zeilen ersetze ich Kommas durch Punkte, falls
+                            der Nutzer eine Kommazahl eingibt. So ist der BMI-Rechner auch für deutschsprachige Nutzer intuitiv zu bedienen.
+>>>>>>> master
+                        </p>
+                        <pre>
+<code >
+let height = heightObj.value.replace(",", ".");
+let weight = weightObj.value.replace(",", ".");
+</code>
+                        </pre>
+                        <p>
+<<<<<<< HEAD
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, maiores amet. Impedit magni quos, rem laboriosam asperiores quia explicabo incidunt ipsa iure, eius veritatis quo quas voluptatibus dicta, officia saepe?
                         </p>
                         <h2>
@@ -67,9 +172,39 @@
                         </h2>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio deleniti molestiae cupiditate hic harum reprehenderit adipisci veniam rem nostrum quam sequi quasi explicabo modi, nesciunt, saepe earum sed aspernatur reiciendis?
+=======
+                            Bisher würde die Berechnung niemals ausgeführt. In der ersten Version hatte ich einen Button eingebaut, der die calculateBmi-Funktion ausführt. Schöner ist es, die Funktion bei jeder Tasteneingabe aufzurufen. Nun wird nach jedem Tastenanschlag der Wert
+                            anhand der aktuellen Eingabe neu berechnet.
                         </p>
+                        <pre>
+<code>
+bmiCalculator.addEventListener("keyup", () => {
+    calculateBmi();
+});
+bmiCalculator.addEventListener("change", () => {
+    calculateBmi();
+});
+</code>
+                        </pre>
                         <p>
+                            Abschließend brauchen wir einen EventListener, der den gesamten Rechner beim Laden der Seite initialisiert.
+>>>>>>> master
+                        </p>
+                        <pre>
+<code>
+window.addEventListener("load", () => {
+    [all code here]
+});
+</code>
+                        </pre>
+                        <h2>Was uns dieses Beispiel lehrt</h2>
+                        <p>
+<<<<<<< HEAD
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, maiores amet. Impedit magni quos, rem laboriosam asperiores quia explicabo incidunt ipsa iure, eius veritatis quo quas voluptatibus dicta, officia saepe?
+=======
+                            Ohne sich mit einer komplizierten Logik herumschlagen zu müssen, kann ein JavaScript-Neuling an diesem Beispiel bereits eine Menge lernen: Wir verarbeiten Nutzereingaben, lernen Funktionen per EventListener aufzurufen und manipulieren sowohl CSS-Eigenschaften
+                            als auch HTML-Inhalte. Da sich ein solcher Rechner als absolutes MVP starten lässt und enorm viel Potential zum Ausbau bietet, lohnt sich ein Blick darauf für jeden JS-Anfänger oder -Umsteiger.
+>>>>>>> master
                         </p>
                     </article>
                 </div>
