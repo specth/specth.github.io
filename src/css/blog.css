@@ -45,6 +45,12 @@ Green:        #2E933C
     padding: 1.2rem;
 }
 
+@media (max-width: 480px) {
+    .blog-entry {
+        min-width: 200px;
+    }
+}
+
 /* --- blog post page --- */
 
 .author-container {
