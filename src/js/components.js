@@ -46,7 +46,7 @@ class VanillaHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
         `
-        <header id="header">
+        <header>
             <nav>
                 <div id="desktop-nav">
                     <div class="topnav">
@@ -85,6 +85,16 @@ class VanillaHeader extends HTMLElement {
     }
 }
 
+class VanillaHeroBanner extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML =
+        `
+
+        `;
+    }
+}
+
 customElements.define('vanilla-footer', VanillaFooter);
 customElements.define('vanilla-header', VanillaHeader);
 customElements.define('vanilla-about-block', VanillaAboutBlock);
+customElements.define('vanilla-hero-banner', VanillaHeroBanner);
