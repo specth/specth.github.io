@@ -218,7 +218,7 @@ span.tooltip {
 }
 
 vanilla-footer {
-    margin-top: 2rem;
+    margin-top: auto;
     padding-top: 6px;
     background-color: #f0da50;
 }
