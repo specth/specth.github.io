@@ -130,10 +130,11 @@ button:hover {
 
 @media (max-width: 768px) {
     #hero-banner {
-        display:none;
+        display: none;
         min-width: 1px;
     }
 }
+
 
 /* This overlay can only be used inside a container with position: relative */
 
@@ -217,15 +218,17 @@ span.tooltip {
     visibility: visible;
 }
 
-vanilla-footer {
+footer {
     margin-top: auto;
-    padding-top: 6px;
-    background-color: #f0da50;
+    display: flex;
 }
 
 .footer-bot {
+    border-top: 6px solid #f0da50;
     background-color: #333;
     overflow: hidden;
+    width: 100%;
+    margin-top: 1.6rem;
 }
 
 .footer-bot>.container {
@@ -235,8 +238,8 @@ vanilla-footer {
 
 /* Footer website information text */
 
-footer>.footer-bot p,
-footer>.footer-bot p i {
+.footer-bot p,
+.footer-bot p i {
     margin: .2rem 0;
     color: #F1F1F1;
     text-align: center;
