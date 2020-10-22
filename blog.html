@@ -7,11 +7,43 @@
     <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <script type="text/javascript" src="src/js/nav.js"></script>
     <script type="text/javascript" src="src/js/blog.js"></script>
-    <script type="text/javascript" src="src/js/components.js"></script>
 </head>
 
 <body>
-    <vanilla-header></vanilla-header>
+    <header>
+        <nav>
+            <div id="desktop-nav">
+                <div class="topnav">
+                    <a href="index.html" class="topnav-left">Über mich</a>
+                    <a href="javascript.html" class="topnav-left">Vanilla JS</a>
+                    <a href="blog.html" class="topnav-left active">Blog</a>
+                    <a href="impressum.html" class="topnav-left">Impressum</a>
+                    <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing topnav-right"></a>
+                    <a href="https://github.com/specthor" class="fab fa-github topnav-right"></a>
+                </div>
+            </div>
+
+            <div id="mobile-nav">
+                <!-- sidebar navigation -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Über mich</a>
+                    <a href="javascript.html">Vanilla JS</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="impressum.html">Impressum</a>
+
+                    <div class="sidenav-social">
+                        <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing"></a>
+                        <a href="https://github.com/specthor" class="fab fa-github"></a>
+                    </div>
+                </div>
+                <!-- Use any element to open the sidenav -->
+                <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+            </div>
+            <div id="header-vanilla"></div>
+        </nav>
+    </header>
+
     <main id="main">
         <section id="hero-banner">
             <img src="./src/img/blog-software-testing.jpg">
@@ -25,9 +57,7 @@
                     <a href="blog/05_vanilla_js_i.html">Vanilla JavaScript Projekt I: BMI-Rechner</a>
                 </h2>
                 <p class="shortDescription">
-                    In diesem kurzen Blogpost möchte ich mein erstes kleines JavaScript-Programm vorstellen. Es ist
-                    inzwischen gute 3 Jahre her, dass ich den BMI-Rechner geschrieben habe und trotzdem möchte ich das
-                    Beispiel auf meiner Seite behalten. Warum, verrate ich gleich.
+                    In diesem kurzen Blogpost möchte ich mein erstes kleines JavaScript-Programm vorstellen. Es ist inzwischen gute 3 Jahre her, dass ich den BMI-Rechner geschrieben habe und trotzdem möchte ich das Beispiel auf meiner Seite behalten. Warum, verrate ich gleich.
                 </p>
             </div>
             <div class="blog-entry blog-entry-m">
@@ -38,9 +68,7 @@
                         Template</a>
                 </h2>
                 <p class="shortDescription">
-                    In den folgenden Zeilen schildere ich, warum ich bis jetzt daran festgehalten habe, mit bloßem HTML,
-                    CSS und JavaScript an dieser Seite zu arbeiten und ab wann ich plane, auf ein Framework und
-                    Bibliotheken zurückzugreifen.
+                    In den folgenden Zeilen schildere ich, warum ich bis jetzt daran festgehalten habe, mit bloßem HTML, CSS und JavaScript an dieser Seite zu arbeiten und ab wann ich plane, auf ein Framework und Bibliotheken zurückzugreifen.
                 </p>
             </div>
             <div class="blog-entry blog-entry-m">
@@ -51,9 +79,7 @@
                         Testerperspektive</a>
                 </h2>
                 <p class="shortDescription">
-                    Zum 01. Juli habe ich in ein Backend-Team gewechselt. Seitdem beschäftige ich mich mit Datenbanken
-                    und Rest-APIs in einer Microservice-Architektur. In diesem Artikel schildere ich, wie sehr sich die
-                    Arbeit als Tester im Frontend und Backend unterscheidet.
+                    Zum 01. Juli habe ich in ein Backend-Team gewechselt. Seitdem beschäftige ich mich mit Datenbanken und Rest-APIs in einer Microservice-Architektur. In diesem Artikel schildere ich, wie sehr sich die Arbeit als Tester im Frontend und Backend unterscheidet.
                 </p>
             </div>
             <div class="blog-entry">
@@ -63,9 +89,7 @@
                     <a href="blog/02_meine-karotte.html">Meine Karotte</a>
                 </h2>
                 <p class="shortDescription">
-                    Wir kennen es vom Esel: Häng ihm eine Karotte vor die Schnauze und er wird laufen. Ich denke, nur
-                    wer eine saftige, frische Karotte vor Augen hat, wird langfristig an etwas dranbleiben. Und so habe
-                    auch ich eine Karotte, die mich antreibt. Was meine Karotte
+                    Wir kennen es vom Esel: Häng ihm eine Karotte vor die Schnauze und er wird laufen. Ich denke, nur wer eine saftige, frische Karotte vor Augen hat, wird langfristig an etwas dranbleiben. Und so habe auch ich eine Karotte, die mich antreibt. Was meine Karotte
                     ist und wie oft ich schon davon naschen durfte, verrate ich Euch in den folgenden Zeilen.
                 </p>
             </div>
@@ -76,14 +100,27 @@
                     <a href="blog/01_warum-diese-seite.html">Warum diese Seite</a>
                 </h2>
                 <p class="shortDescription">
-                    Als Softwaretester programmiere ich beruflich hauptsächlich automatisierte Tests. Dabei fehlt mir
-                    das Gefühl, selbst etwas zu "erschaffen". Ich möchte diese Seite nutzen, um selbst ein kleines
-                    Webprojekt aufzubauen, weiterzuentwicklen und zu pflegen.
+                    Als Softwaretester programmiere ich beruflich hauptsächlich automatisierte Tests. Dabei fehlt mir das Gefühl, selbst etwas zu "erschaffen". Ich möchte diese Seite nutzen, um selbst ein kleines Webprojekt aufzubauen, weiterzuentwicklen und zu pflegen.
                 </p>
             </div>
         </div>
     </main>
-    <vanilla-footer></vanilla-footer>
+    <footer id="footer">
+        <div class="footer-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p id="footer-made-with">
+                            <i class="fab fa-html5" aria-hidden="true"></i> + <i class="fab fa-css3" aria-hidden="true"></i> + <i class="fab fa-js" aria-hidden="true"></i> <br />
+                        </p>
+                        <p>
+                            Kein Framework. Kein Template. Vanilla JS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
