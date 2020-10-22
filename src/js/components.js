@@ -1,7 +1,7 @@
 class VanillaFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
-        `
+            `
         <footer id="footer">
             <div class="footer-bot">
                 <div class="container">
@@ -19,7 +19,6 @@ class VanillaFooter extends HTMLElement {
                     </div>
                 </div>
             </div>
-        
         </footer>
         `;
     }
@@ -28,7 +27,7 @@ class VanillaFooter extends HTMLElement {
 class VanillaAboutBlock extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
-        `
+            `
         <div class="author-container clearfix">
             <div class="author-image-container">
                 <img class="author-image" src="../src/img/thorsten-specht-foto.1024x1024.jpg">
@@ -45,15 +44,15 @@ class VanillaAboutBlock extends HTMLElement {
 class VanillaHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
-        `
+            `
         <header>
             <nav>
                 <div id="desktop-nav">
                     <div class="topnav">
-                        <a href="/index.html" class="topnav-left" id="desktop-nav-about">Über mich</a>
-                        <a href="/javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
-                        <a href="/blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
-                        <a href="/impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
+                        <a href="index.html" class="topnav-left" id="desktop-nav-about">Über mich</a>
+                        <a href="javascript.html" class="topnav-left" id="desktop-nav-vanilla">Vanilla JS</a>
+                        <a href="blog.html" class="topnav-left" id="desktop-nav-blog">Blog</a>
+                        <a href="impressum.html" class="topnav-left" id="desktop-nav-impressum">Impressum</a>                    
                         <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing topnav-right"></a>
                         <a href="https://github.com/specthor" class="fab fa-github topnav-right"></a>
                     </div>
@@ -64,10 +63,10 @@ class VanillaHeader extends HTMLElement {
                     <!-- sidebar navigation -->
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="/index.html">Über mich</a>
-                        <a href="/javascript.html">Vanilla JS</a>
-                        <a href="/blog.html">Blog</a>
-                        <a href="/impressum.html">Impressum</a>    
+                        <a href="index.html">Über mich</a>
+                        <a href="javascript.html">Vanilla JS</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="impressum.html">Impressum</a>    
                         
                         <div class="sidenav-social">
                             <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing"></a>
@@ -88,7 +87,7 @@ class VanillaHeader extends HTMLElement {
 class VanillaHeroBanner extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
-        `
+            `
 
         `;
     }

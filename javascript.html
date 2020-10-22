@@ -8,12 +8,42 @@
     <script type="text/javascript" src="src/js/nav.js"></script>
     <script type="text/javascript" src="src/js/bmiCalculator.js"></script>
     <script type="text/javascript" src="src/js/collapsible.js"></script>
-    <script type="text/javascript" src="src/js/components.js"></script>
 
 </head>
 
 <body>
-    <vanilla-header></vanilla-header>
+    <header>
+        <nav>
+            <div id="desktop-nav">
+                <div class="topnav">
+                    <a href="index.html" class="topnav-left">Über mich</a>
+                    <a href="javascript.html" class="topnav-left active">Vanilla JS</a>
+                    <a href="blog.html" class="topnav-left">Blog</a>
+                    <a href="impressum.html" class="topnav-left">Impressum</a>
+                    <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing topnav-right"></a>
+                    <a href="https://github.com/specthor" class="fab fa-github topnav-right"></a>
+                </div>
+            </div>
+
+            <div id="mobile-nav">
+                <!-- sidebar navigation -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Über mich</a>
+                    <a href="javascript.html">Vanilla JS</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="impressum.html">Impressum</a>
+                    <div class="sidenav-social">
+                        <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing"></a>
+                        <a href="https://github.com/specthor" class="fab fa-github"></a>
+                    </div>
+                </div>
+                <!-- Use any element to open the sidenav -->
+                <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+            </div>
+            <div id="header-vanilla"></div>
+        </nav>
+    </header>
     <main id="main">
         <section id="hero-banner">
             <img src="./src/img/homeoffice.jpg">
@@ -32,8 +62,7 @@
                                     Erweiterung einer Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
                                 </span>
                             </span>
-                            <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen zu lassen.
-                                Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
+                            <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen zu lassen. Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
 
                             <div class="gameContent">
                                 <button id="jumpGameStartButton" class="gameButton" type="button">Spiel
@@ -129,7 +158,22 @@
         <div class="content">qweqweqwe</div>
  -->
     </main>
-    <vanilla-footer></vanilla-footer>
+    <footer id="footer">
+        <div class="footer-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p id="footer-made-with">
+                            <i class="fab fa-html5" aria-hidden="true"></i> + <i class="fab fa-css3" aria-hidden="true"></i> + <i class="fab fa-js" aria-hidden="true"></i> <br />
+                        </p>
+                        <p>
+                            Kein Framework. Kein Template. Vanilla JS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
