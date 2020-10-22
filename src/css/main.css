@@ -130,10 +130,11 @@ button:hover {
 
 @media (max-width: 768px) {
     #hero-banner {
-        display:none;
+        display: none;
         min-width: 1px;
     }
 }
+
 
 /* This overlay can only be used inside a container with position: relative */
 
@@ -217,7 +218,7 @@ span.tooltip {
     visibility: visible;
 }
 
-vanilla-footer {
+#footer {
     margin-top: 2rem;
     padding-top: 6px;
     background-color: #f0da50;
