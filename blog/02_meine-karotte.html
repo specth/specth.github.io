@@ -6,11 +6,42 @@
     <link rel="stylesheet" type="text/css" href="../src/css/style.css">
     <script type="text/javascript" src="../src/js/nav.js"></script>
     <script type="text/javascript" src="../src/js/collapsible.js"></script>
-    <script type="text/javascript" src="../src/js/components.js"></script>
 </head>
 
 <body>
-    <vanilla-header></vanilla-header>
+    <header>
+        <nav>
+            <div id="desktop-nav">
+                <div class="topnav">
+                    <a href="../index.html" class="topnav-left">Über mich</a>
+                    <a href="../javascript.html" class="topnav-left">Vanilla JS</a>
+                    <a href="../blog.html" class="topnav-left active">Blog</a>
+                    <a href="../impressum.html" class="topnav-left">Impressum</a>
+                    <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing topnav-right"></a>
+                    <a href="https://github.com/specthor" class="fab fa-github topnav-right"></a>
+                </div>
+            </div>
+
+            <div id="mobile-nav">
+                <!-- sidebar navigation -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="../index.html">Über mich</a>
+                    <a href="../javascript.html">Vanilla JS</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="../impressum.html">Impressum</a>
+
+                    <div class="sidenav-social">
+                        <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing"></a>
+                        <a href="https://github.com/specthor" class="fab fa-github"></a>
+                    </div>
+                </div>
+                <!-- Use any element to open the sidenav -->
+                <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+            </div>
+            <div id="header-vanilla"></div>
+        </nav>
+    </header>
     <main id="main" class="blog-post">
         <div class="container">
             <div class="row">
@@ -30,81 +61,75 @@
                             </div>
                         </div>
                         <p>
-                            Wir kennen es vom Esel: Häng ihm eine Karotte vor die Schnauze und er wird laufen. Ich
-                            denke, nur wer eine saftige, frische Karotte vor Augen hat, wird langfristig an etwas
-                            dranbleiben. Und so habe auch ich eine Karotte, die mich antreibt. Was meine Karotte
+                            Wir kennen es vom Esel: Häng ihm eine Karotte vor die Schnauze und er wird laufen. Ich denke, nur wer eine saftige, frische Karotte vor Augen hat, wird langfristig an etwas dranbleiben. Und so habe auch ich eine Karotte, die mich antreibt. Was meine Karotte
                             ist und wie oft ich schon davon naschen durfte, verrate ich Euch in den folgenden Zeilen.
                         </p>
                         <h2>
                             ul: Code, Schreiben, Software, Entwickeln
                         </h2>
                         <p>
-                            <b>Software:</b> Als Jugendlicher war ich, wie viele Jugendliche in dem Alter, einfach ein
-                            PC-Nerd und Zocker. Aber schon sehr früh hat es mich gereizt, <i>Dinge zu modifizieren</i>.
-                            Anfangs habe ich an lokalen Spieldateien
-                            rumgepfuscht, um zum Beispiel die Hintergrundfarbe, Musik oder Geschwindigkeit von Spielen
-                            zu verändern. Später dann habe ich im Warcraft III Map-Builder meine eigenen Karten und
-                            Modis gebastelt. Mich hat Software immer fasziniert
-                            und zwar nicht nur die Anwendung, sondern wie sie funktioniert und wie sie sich verändern
-                            lässt.
+                            <b>Software:</b> Als Jugendlicher war ich, wie viele Jugendliche in dem Alter, einfach ein PC-Nerd und Zocker. Aber schon sehr früh hat es mich gereizt, <i>Dinge zu modifizieren</i>. Anfangs habe ich an lokalen Spieldateien
+                            rumgepfuscht, um zum Beispiel die Hintergrundfarbe, Musik oder Geschwindigkeit von Spielen zu verändern. Später dann habe ich im Warcraft III Map-Builder meine eigenen Karten und Modis gebastelt. Mich hat Software immer fasziniert
+                            und zwar nicht nur die Anwendung, sondern wie sie funktioniert und wie sie sich verändern lässt.
                         </p>
                         <p>
-                            <b>Entwickeln:</b> In der 7. Klasse musste ich mich dafür entscheiden, ob ich Französisch,
-                            Latein oder <i>computergestützte Informationstechnologie</i> lernen möchte. Natürlich habe
-                            ich Letzteres gewählt. Anfangs haben wir
+                            <b>Entwickeln:</b> In der 7. Klasse musste ich mich dafür entscheiden, ob ich Französisch, Latein oder <i>computergestützte Informationstechnologie</i> lernen möchte. Natürlich habe ich Letzteres gewählt. Anfangs haben wir
                             mit <a href="https://de.wikipedia.org/wiki/Logo_(Programmiersprache)">Logo
-                                (Programmiersprache)</a> Programmiergrundlagen erlernt. Schon damals habe ich gerne mal
-                            10 Stunden und länger an einer Hausaufgabe gesessen. Das Programmieren hat mich gebockt. Die
-                            Zeit flog so dahin. Und auch wenn die
-                            Aufgabe gelöst war, habe ich mich selten damit zufrieden gegeben. Ich fand es einfach super,
-                            Probleme zu verstehen und Lösungen zu entwickeln.
+                                (Programmiersprache)</a> Programmiergrundlagen erlernt. Schon damals habe ich gerne mal 10 Stunden und länger an einer Hausaufgabe gesessen. Das Programmieren hat mich gebockt. Die Zeit flog so dahin. Und auch wenn die
+                            Aufgabe gelöst war, habe ich mich selten damit zufrieden gegeben. Ich fand es einfach super, Probleme zu verstehen und Lösungen zu entwickeln.
                         </p>
                         <p>
-                            <b>Schreiben:</b> Ob Aufsätze für die Schule, Artikel für die Abizeitung, Gedichte oder
-                            Dokumentation / Anleitungen: Ich habe schon immer gerne geschrieben. Das hat mich dann auch
-                            zu einem Journalismus-Studium (Bachelor) und
-                            einem Studium der Technischen Redaktion (Master) bewegt. Als ich die Entscheidung für die
-                            jeweiligen Studienfächer getroffen habe, hatte ich nicht auf dem Schirm, dass man noch etwas
-                            Schreiben kann: Code.
+                            <b>Schreiben:</b> Ob Aufsätze für die Schule, Artikel für die Abizeitung, Gedichte oder Dokumentation / Anleitungen: Ich habe schon immer gerne geschrieben. Das hat mich dann auch zu einem Journalismus-Studium (Bachelor) und
+                            einem Studium der Technischen Redaktion (Master) bewegt. Als ich die Entscheidung für die jeweiligen Studienfächer getroffen habe, hatte ich nicht auf dem Schirm, dass man noch etwas Schreiben kann: Code.
                         </p>
                         <p>
-                            <b>Code:</b> Womit wir schon beim Code sind. Irgendwas in mir steht auf Editoren, Code,
-                            farbigen Text auf schwarzem Hintergrund. Während meines Studiums habe ich als Softwaretester
-                            in der Softwareentwicklung gearbeitet. Meine
-                            eigene Arbeit war wenig technisch: manuelles Testen, Bug-Tickets schreiben und Bugs mit
-                            Entwicklern besprechen. Doch immer, wenn ich durch die Büros gelaufen bin und geöffnete
-                            Editoren mit Code gesehen habe, ist mein Herz aufgegangen.
-                            Diese Momente haben den entscheidenen Impuls erzeugt, selbst wieder mit dem Coden
-                            anzufangen.
+                            <b>Code:</b> Womit wir schon beim Code sind. Irgendwas in mir steht auf Editoren, Code, farbigen Text auf schwarzem Hintergrund. Während meines Studiums habe ich als Softwaretester in der Softwareentwicklung gearbeitet. Meine
+                            eigene Arbeit war wenig technisch: manuelles Testen, Bug-Tickets schreiben und Bugs mit Entwicklern besprechen. Doch immer, wenn ich durch die Büros gelaufen bin und geöffnete Editoren mit Code gesehen habe, ist mein Herz aufgegangen.
+                            Diese Momente haben den entscheidenen Impuls erzeugt, selbst wieder mit dem Coden anzufangen.
                         </p>
                         <h2>Zurück zum Gemüse: was ist nun die Karotte?</h2>
                         <p>
-                            Die Karotte ist nichts anderes, als möglichst viel Zeit mit Code, Schreiben, Software und
-                            Entwicklung zu verbringen. Wer das schon mal neben einem Vollzeit-Job versucht hat, der mit
-                            nichts von alledem zu tun hat, wird wissen: gar nicht so einfach. Deshalb
-                            habe ich nach den ersten Monaten als Technischer Redakteur auch beschlossen, die Reißleine
-                            zu ziehen und in die Softwareentwicklung zu wechseln. Seit ich als QA Engineer arbeite, lege
-                            ich den Fokus stark auf die technischen
-                            Aspekte des Jobs. Und das immer mit dem Ziel vor Augen: Mehr Code zu sehen, mehr Code zu
-                            schreiben, Software zu testen und irgendwann vielleicht auch selbst zu entwickeln.
+                            Die Karotte ist nichts anderes, als möglichst viel Zeit mit Code, Schreiben, Software und Entwicklung zu verbringen. Wer das schon mal neben einem Vollzeit-Job versucht hat, der mit nichts von alledem zu tun hat, wird wissen: gar nicht so einfach. Deshalb
+                            habe ich nach den ersten Monaten als Technischer Redakteur auch beschlossen, die Reißleine zu ziehen und in die Softwareentwicklung zu wechseln. Seit ich als QA Engineer arbeite, lege ich den Fokus stark auf die technischen
+                            Aspekte des Jobs. Und das immer mit dem Ziel vor Augen: Mehr Code zu sehen, mehr Code zu schreiben, Software zu testen und irgendwann vielleicht auch selbst zu entwickeln.
                         </p>
                         <h3>Berührungspunkte als QA Engineer</h3>
-                        <p>Als Softwaretester bin ich täglich von Code, IT-Infrastruktur und anderen technischen
-                            Aspekten umgeben. Durch die automatisierten Tests kann ich daher nicht nur selbst
-                            programmieren, sondern bin auch in die Planung, Entwicklung
-                            und Auslieferung von Software involviert. Das Umfeld ist ideal, um sich als Quereinsteiger
-                            mit Fragen der Informatik zu beschäftigen und zunehmend technische Expertise aufzubauen.</p>
+                        <p>Als Softwaretester bin ich täglich von Code, IT-Infrastruktur und anderen technischen Aspekten umgeben. Durch die automatisierten Tests kann ich daher nicht nur selbst programmieren, sondern bin auch in die Planung, Entwicklung
+                            und Auslieferung von Software involviert. Das Umfeld ist ideal, um sich als Quereinsteiger mit Fragen der Informatik zu beschäftigen und zunehmend technische Expertise aufzubauen.</p>
                     </article>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6">
-                    <vanilla-about-block></vanilla-about-block>
+                    <div class="author-container clearfix">
+                        <div class="author-image-container">
+                            <img class="author-image" src="../src/img/thorsten-specht-foto.1024x1024.jpg">
+                        </div>
+                        <div class="author-description-container">
+                            <strong s>Thorsten Specht</strong>
+                            <p>Thorsten Specht ist Softwaretester und bloggt über Themen rund um's Testen, Entwickeln und Gestalten. Auf dieser Seite tobt er sich mit HTML, CSS und JavaScript aus, ohne auf Frameworks, Bibliotheken oder Templates zurückzugreifen.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <vanilla-footer></vanilla-footer>
+    <footer>
+        <div class="footer-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p id="footer-made-with">
+                            <i class="fab fa-html5" aria-hidden="true"></i> + <i class="fab fa-css3" aria-hidden="true"></i> + <i class="fab fa-js" aria-hidden="true"></i> <br />
+                        </p>
+                        <p>
+                            Kein Framework. Kein Template. Vanilla JS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

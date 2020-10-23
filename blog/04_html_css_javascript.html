@@ -6,11 +6,42 @@
     <link rel="stylesheet" type="text/css" href="../src/css/style.css">
     <script type="text/javascript" src="../src/js/nav.js"></script>
     <script type="text/javascript" src="../src/js/collapsible.js"></script>
-    <script type="text/javascript" src="../src/js/components.js"></script>
 </head>
 
 <body>
-    <vanilla-header></vanilla-header>
+    <header>
+        <nav>
+            <div id="desktop-nav">
+                <div class="topnav">
+                    <a href="../index.html" class="topnav-left">Über mich</a>
+                    <a href="../javascript.html" class="topnav-left">Vanilla JS</a>
+                    <a href="../blog.html" class="topnav-left active">Blog</a>
+                    <a href="../impressum.html" class="topnav-left">Impressum</a>
+                    <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing topnav-right"></a>
+                    <a href="https://github.com/specthor" class="fab fa-github topnav-right"></a>
+                </div>
+            </div>
+
+            <div id="mobile-nav">
+                <!-- sidebar navigation -->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="../index.html">Über mich</a>
+                    <a href="../javascript.html">Vanilla JS</a>
+                    <a href="../blog.html">Blog</a>
+                    <a href="../impressum.html">Impressum</a>
+
+                    <div class="sidenav-social">
+                        <a href="https://www.xing.com/profile/Thorsten_Specht6/cv" class="fab fa-xing"></a>
+                        <a href="https://github.com/specthor" class="fab fa-github"></a>
+                    </div>
+                </div>
+                <!-- Use any element to open the sidenav -->
+                <span id="openMenuBtn" onclick="openNav()">&equiv;</span>
+            </div>
+            <div id="header-vanilla"></div>
+        </nav>
+    </header>
     <main id="main" class="blog-post">
         <div class="container">
             <div class="row">
@@ -30,105 +61,93 @@
                             </div>
                         </div>
                         <p>
-                            In den Monaten Mai und Juni war ich Corona-bedingt in Kurzarbeit. Noch vor meinem ersten Tag
-                            in "Zwangsurlaub" habe ich eine Liste mit Themen erstellt, in denen ich mich während dieser
-                            Zeit auseinandersetzen wollte. Zwar beschäftige ich mich schon lange mit Webentwicklung,
-                            doch in der Vergangenheit habe ich sehr früh auf Bootstrap und jQuery zurückgegriffen. Daher
-                            stand an oberster Stelle: Tiefgehendes Verständnis
-                            von HTML5, CSS3 und JavaScript (ES6). Dazu habe ich mir die Kurse "Der ultimative HTML5 und
-                            CSS3 Komplettkurs" von Ruben Winkler sowie den "Modernes JavaScript (ES6)"-Kurs von Jannis
-                            Seemann rausgesucht. Beide Kurse habe ich
-                            durchgearbeitet – und mit dem gelernten Wissen diese Seite hier erstellt.
+                            In den Monaten Mai und Juni war ich Corona-bedingt in Kurzarbeit. Noch vor meinem ersten Tag in "Zwangsurlaub" habe ich eine Liste mit Themen erstellt, in denen ich mich während dieser Zeit auseinandersetzen wollte. Zwar beschäftige ich mich schon lange
+                            mit Webentwicklung, doch in der Vergangenheit habe ich sehr früh auf Bootstrap und jQuery zurückgegriffen. Daher stand an oberster Stelle: Tiefgehendes Verständnis von HTML5, CSS3 und JavaScript (ES6). Dazu habe ich mir die
+                            Kurse "Der ultimative HTML5 und CSS3 Komplettkurs" von Ruben Winkler sowie den "Modernes JavaScript (ES6)"-Kurs von Jannis Seemann rausgesucht. Beide Kurse habe ich durchgearbeitet – und mit dem gelernten Wissen diese Seite
+                            hier erstellt.
                         </p>
                         <p>
-                            In den folgenden Zeilen schildere ich, warum ich bis jetzt daran festgehalten habe, mit
-                            bloßem HTML, CSS und JavaScript an dieser Seite zu arbeiten und ab wann ich plane, auf ein
-                            Framework und Bibliotheken zurückzugreifen.
+                            In den folgenden Zeilen schildere ich, warum ich bis jetzt daran festgehalten habe, mit bloßem HTML, CSS und JavaScript an dieser Seite zu arbeiten und ab wann ich plane, auf ein Framework und Bibliotheken zurückzugreifen.
                         </p>
                         <h2>
                             "HTML kann doch jeder"
                         </h2>
                         <p>
-                            Zugegeben: HTML ist mit Sicherheit die einfachste Technologie aus dem Bereich der
-                            Webentwicklung. Dennoch gibt es selbst hierzu mehr zu lernen, als den bloßen Aufbau eines
-                            wohlgeformten HTML-Grundgerüsts. Zum einen wäre da die sinnvolle Verwendung semantischer
+                            Zugegeben: HTML ist mit Sicherheit die einfachste Technologie aus dem Bereich der Webentwicklung. Dennoch gibt es selbst hierzu mehr zu lernen, als den bloßen Aufbau eines wohlgeformten HTML-Grundgerüsts. Zum einen wäre da die sinnvolle Verwendung semantischer
                             Auszeichnungen, zum Beispiel durch die Elemente <em>main, article, header und footer</em>.
                         </p>
                         <p>
-                            Weitergehend gibt es Entitäten zu erkunden, um zum Beispiel ungewollte Zeilenumbrüche zu
-                            verhindern oder Sonderzeichen einzufügen. Doch soweit war mir nichts davon neu. Trotzdem war
-                            ich neugierig, wie Ruben Winkler es schafft, einen fast 38-stündigen
-                            Kurs allein mit den Themen HTML und CSS zu füllen. Also habe ich den Kurs weiter
-                            durchgearbeitet.
+                            Weitergehend gibt es Entitäten zu erkunden, um zum Beispiel ungewollte Zeilenumbrüche zu verhindern oder Sonderzeichen einzufügen. Doch soweit war mir nichts davon neu. Trotzdem war ich neugierig, wie Ruben Winkler es schafft, einen fast 38-stündigen
+                            Kurs allein mit den Themen HTML und CSS zu füllen. Also habe ich den Kurs weiter durchgearbeitet.
                         </p>
                         <p>
-                            Und siehe da: Mit <em>Emmet</em> hat Ruben mir die erste HTML-Spielerei beigebracht, die mir
-                            bisher unbekannt war. Inzwischen habe ich mich an die Arbeit mit Emmet gewöhnt und bin immer
-                            wieder begeistert, wie viel Tipparbeit
+                            Und siehe da: Mit <em>Emmet</em> hat Ruben mir die erste HTML-Spielerei beigebracht, die mir bisher unbekannt war. Inzwischen habe ich mich an die Arbeit mit Emmet gewöhnt und bin immer wieder begeistert, wie viel Tipparbeit
                             das Toolkit einem abnimmt.
                         </p>
                         <h2>CSS: ein Universum für sich</h2>
                         <p>
-                            Auch CSS war mir nicht neu. Doch zuvor habe ich meist Templates verwendet und bearbeitet
-                            oder nur Feinheiten an dem Theme eines WordPress-Blogs Vorgenommen. Auch kleinere Webseiten
-                            mit Kopfleiste, Fußleiste und einfachstem Menü hatte ich
-                            schon gebastelt. Doch dass ich damit gerade einmal die grundsätzliche Funktionsweise von CSS
-                            kannte, war mir nicht klar.
+                            Auch CSS war mir nicht neu. Doch zuvor habe ich meist Templates verwendet und bearbeitet oder nur Feinheiten an dem Theme eines WordPress-Blogs Vorgenommen. Auch kleinere Webseiten mit Kopfleiste, Fußleiste und einfachstem Menü hatte ich schon gebastelt.
+                            Doch dass ich damit gerade einmal die grundsätzliche Funktionsweise von CSS kannte, war mir nicht klar.
                         </p>
                         <p>
-                            In Rubens Kurs habe ich schnell gemerkt, wie viel Wissen über CSS nötig ist, um damit
-                            sinnvoll und vorallem effizient zu arbeiten. Wer genügend Zeit mitbringt, kann über Trial
-                            and Error bereits viel erreichen. Auf diese Weise etwas Komplizierteres, zum
-                            Beispiel ein Grid-System zu gestalten, ist aber sehr langwierig. Selbst scheinbar triviale
-                            Dinge, wie vertikales Zentrieren von Elementen, Text auf Bildern positionieren oder eine
-                            Fußleiste am unteren Ende der Seite zu fixieren, können zur Herausforderung werden. Für mein
-                            Empfinden hilft daher nur eins, um im Umgang mit CSS schneller und besser zu werden: Übung –
-                            und zwar jede Menge!
+                            In Rubens Kurs habe ich schnell gemerkt, wie viel Wissen über CSS nötig ist, um damit sinnvoll und vorallem effizient zu arbeiten. Wer genügend Zeit mitbringt, kann über Trial and Error bereits viel erreichen. Auf diese Weise etwas Komplizierteres, zum
+                            Beispiel ein Grid-System zu gestalten, ist aber sehr langwierig. Selbst scheinbar triviale Dinge, wie vertikales Zentrieren von Elementen, Text auf Bildern positionieren oder eine Fußleiste am unteren Ende der Seite zu fixieren,
+                            können zur Herausforderung werden. Für mein Empfinden hilft daher nur eins, um im Umgang mit CSS schneller und besser zu werden: Übung – und zwar jede Menge!
                         </p>
                         <h2>Vanilla JS statt jQuery</h2>
                         <p>
-                            Erst kürzlich habe ich den Podcast <a
-                                href="https://www.codenewbie.org/podcast/what-is-vanilla-js-and-how-can-it-help-you">What
-                                is vanilla JS and how can it help you</a> von dem der Entwickler Chris Ferdinandi
-                            gehört. Darin
-                            spricht er darüber, für wie wichtig er es hält, reines JavaScript zu beherrschen, bevor man
-                            beispielsweise auf jQuery zurückgreift.
+                            Erst kürzlich habe ich den Podcast <a href="https://www.codenewbie.org/podcast/what-is-vanilla-js-and-how-can-it-help-you">What
+                                is vanilla JS and how can it help you</a> von dem der Entwickler Chris Ferdinandi gehört. Darin spricht er darüber, für wie wichtig er es hält, reines JavaScript zu beherrschen, bevor man beispielsweise auf jQuery zurückgreift.
                         </p>
                         <p>
-                            Im Grunde dreht sich alles darum, <em>zu verstehen</em>, wie ein Problem in JavaScript
-                            gelöst werden kann. jQuery bietet viele Lösungen an und gerade mittels StackOverflow lassen
-                            sich Probleme oft per Copy and Paste lösen.
-                            Das heißt aber lange nicht, dass man die Lösung verstanden hat und beim nächsten, ähnlichen
-                            Problem, selbst in abgeänderter Form wieder anwenden kann.
+                            Im Grunde dreht sich alles darum, <em>zu verstehen</em>, wie ein Problem in JavaScript gelöst werden kann. jQuery bietet viele Lösungen an und gerade mittels StackOverflow lassen sich Probleme oft per Copy and Paste lösen.
+                            Das heißt aber lange nicht, dass man die Lösung verstanden hat und beim nächsten, ähnlichen Problem, selbst in abgeänderter Form wieder anwenden kann.
                         </p>
                         <p>
-                            Sobald ich ausreichend Übung in JavaScript habe und mich in der Lage fühle, jQuery nur noch
-                            als Abkürzung zu nutzen, werde ich darauf zurückgreifen. Für mich soll jQuery aber nicht
-                            dazu dienen, mich vor der eigenen Lösungsfindung zu drücken.
+                            Sobald ich ausreichend Übung in JavaScript habe und mich in der Lage fühle, jQuery nur noch als Abkürzung zu nutzen, werde ich darauf zurückgreifen. Für mich soll jQuery aber nicht dazu dienen, mich vor der eigenen Lösungsfindung zu drücken.
                         </p>
                         <h2>Ausblick: Grundlagen verstehen, dann Abkürzungen nutzen</h2>
                         <p>
-                            Zusammengefasst baue ich meine erste größere Webseite mit reinem HTML5, CSS3 und JavaScript,
-                            um die Funktionsweisen richtig zu verstehen. Ich möchte mich <em>mit den Schwierigkeiten
-                                befassen</em>, die Frameworks dem Entwickler
-                            abnehmen und damit eine gute Basis aufbauen.
+                            Zusammengefasst baue ich meine erste größere Webseite mit reinem HTML5, CSS3 und JavaScript, um die Funktionsweisen richtig zu verstehen. Ich möchte mich <em>mit den Schwierigkeiten
+                                befassen</em>, die Frameworks dem Entwickler abnehmen und damit eine gute Basis aufbauen.
                         </p>
                         <p>
-                            Sobald ich das Gefühl habe, ausreichend oft über die gleichen Problemchen gestolpert zu sein
-                            und deren Lösungsmuster verinnerlicht zu haben, werde ich meine nächsten Projekte angehen –
-                            zunächst mit Bootstrap und jQuery und später dann mit dem MEVN-Stack.
+                            Sobald ich das Gefühl habe, ausreichend oft über die gleichen Problemchen gestolpert zu sein und deren Lösungsmuster verinnerlicht zu haben, werde ich meine nächsten Projekte angehen – zunächst mit Bootstrap und jQuery und später dann mit dem MEVN-Stack.
                         </p>
                     </article>
                 </div>
             </div>
             <div class="row">
                 <div class="col-6">
-                    <vanilla-about-block></vanilla-about-block>
+                    <div class="author-container clearfix">
+                        <div class="author-image-container">
+                            <img class="author-image" src="../src/img/thorsten-specht-foto.1024x1024.jpg">
+                        </div>
+                        <div class="author-description-container">
+                            <strong s>Thorsten Specht</strong>
+                            <p>Thorsten Specht ist Softwaretester und bloggt über Themen rund um's Testen, Entwickeln und Gestalten. Auf dieser Seite tobt er sich mit HTML, CSS und JavaScript aus, ohne auf Frameworks, Bibliotheken oder Templates zurückzugreifen.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <vanilla-footer></vanilla-footer>
+    <footer>
+        <div class="footer-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p id="footer-made-with">
+                            <i class="fab fa-html5" aria-hidden="true"></i> + <i class="fab fa-css3" aria-hidden="true"></i> + <i class="fab fa-js" aria-hidden="true"></i> <br />
+                        </p>
+                        <p>
+                            Kein Framework. Kein Template. Vanilla JS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

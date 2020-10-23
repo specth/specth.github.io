@@ -71,7 +71,7 @@ pre code {
 h1 {
     text-align: center;
     margin: 2rem auto 1.2rem auto;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 h2 {
@@ -120,6 +120,20 @@ button:hover {
 
 
 /* --- Images --- */
+
+#hero-banner>img {
+    object-fit: cover;
+    width: 100%;
+    min-width: 380px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    #hero-banner {
+        display: none;
+        min-width: 1px;
+    }
+}
 
 
 /* This overlay can only be used inside a container with position: relative */
@@ -204,15 +218,17 @@ span.tooltip {
     visibility: visible;
 }
 
-vanilla-footer {
+footer {
     margin-top: auto;
-    padding-top: 6px;
-    background-color: #f0da50;
+    display: flex;
 }
 
 .footer-bot {
+    border-top: 6px solid #f0da50;
     background-color: #333;
     overflow: hidden;
+    width: 100%;
+    margin-top: 1.6rem;
 }
 
 .footer-bot>.container {
@@ -222,8 +238,8 @@ vanilla-footer {
 
 /* Footer website information text */
 
-footer>.footer-bot p,
-footer>.footer-bot p i {
+.footer-bot p,
+.footer-bot p i {
     margin: .2rem 0;
     color: #F1F1F1;
     text-align: center;
