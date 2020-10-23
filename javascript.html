@@ -8,6 +8,7 @@
     <script type="text/javascript" src="src/js/nav.js"></script>
     <script type="text/javascript" src="src/js/bmiCalculator.js"></script>
     <script type="text/javascript" src="src/js/collapsible.js"></script>
+    <script type="text/javascript" src="src/js/getMeals.js"></script>
 
 </head>
 
@@ -55,108 +56,123 @@
                     <div class="shadow">
                         <div class="gameContent">
                             <h2>
-                                Hüpfspiel – nicht den Rand berühren!
+                                Mahlzeiten-Generator
                             </h2>
                             <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
                                 <span class="tooltiptext">
-                                    Erweiterung einer Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
+                                    Inspiriert durch Florin Pops Challenge '10 JavaScript Projects in 10 Hours'.
                                 </span>
                             </span>
-                            <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen zu lassen. Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
 
-                            <div class="gameContent">
-                                <button id="jumpGameStartButton" class="gameButton" type="button">Spiel
-                                    beginnen</button>
-                                <button id="jumpGameStopButton" class="gameButton" type="button">Spiel beenden</button>
-                            </div>
-                            <div class="gameContent">
-                                <p>Deine Punktzahl: <span id="jumpGameResult"></span></p>
-                            </div>
+                            <div id="currentMealImage"></div>
+
                         </div>
-
-                        <div id="jumpGame"></div>
-
-                        <script type="text/javascript" src="./src/js/jumpGame.js"></script>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-6">
-                    <div class="shadow">
-                        <div class="gameContent">
-                            <h2>
-                                Teste Deine Reaktionen!
-                            </h2>
-                            <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shadow">
+                            <div class="gameContent">
+                                <h2>
+                                    Hüpfspiel – nicht den Rand berühren!
+                                </h2>
+                                <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
+                                <span class="tooltiptext">
+                                    Erweiterung einer Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
+                                </span>
+                                </span>
+                                <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen zu lassen. Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
+
+                                <div class="gameContent">
+                                    <button id="jumpGameStartButton" class="gameButton" type="button">Spiel
+                                    beginnen</button>
+                                    <button id="jumpGameStopButton" class="gameButton" type="button">Spiel beenden</button>
+                                </div>
+                                <div class="gameContent">
+                                    <p>Deine Punktzahl: <span id="jumpGameResult"></span></p>
+                                </div>
+                            </div>
+
+                            <div id="jumpGame"></div>
+
+                            <script type="text/javascript" src="./src/js/jumpGame.js"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shadow">
+                            <div class="gameContent">
+                                <h2>
+                                    Teste Deine Reaktionen!
+                                </h2>
+                                <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
                                 <span class="tooltiptext">
                                     Erweiterung einer Übung aus dem Kurs "Der komplette Web-Entwickler Kurs" von Denis
                                     Panjuta.
                                 </span>
-                            </span>
-                            <p>Klicke so schnell Du kannst auf die Formen.</p>
+                                </span>
+                                <p>Klicke so schnell Du kannst auf die Formen.</p>
 
-                            <div class="gameContent">
-                                <button id="reactionGameStartButton" class="gameButton" type="button">Spiel
+                                <div class="gameContent">
+                                    <button id="reactionGameStartButton" class="gameButton" type="button">Spiel
                                     beginnen</button>
-                                <button id="reactionGameStopButton" class="gameButton" type="button">Spiel
+                                    <button id="reactionGameStopButton" class="gameButton" type="button">Spiel
                                     beenden</button>
+                                </div>
+                                <div class="gameContent">
+                                    <p>Deine Zeit: <span id="result"></span></p>
+                                    <p>Rekord: <span id="record"></span></p>
+
+
+                                </div>
                             </div>
-                            <div class="gameContent">
-                                <p>Deine Zeit: <span id="result"></span></p>
-                                <p>Rekord: <span id="record"></span></p>
+                            <script type="text/javascript" src="./src/js/reaktionszeittester.js"></script>
 
+                            <div id="reaction-game">
+                                <div id="target"></div>
 
                             </div>
-                        </div>
-                        <script type="text/javascript" src="./src/js/reaktionszeittester.js"></script>
-
-                        <div id="reaction-game">
-                            <div id="target"></div>
-
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col-6">
-                    <div class="shadow">
-                        <div class="gameContent">
-                            <h2>
-                                BMI-Rechner
-                            </h2>
-                            <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shadow">
+                            <div class="gameContent">
+                                <h2>
+                                    BMI-Rechner
+                                </h2>
+                                <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
                                 <span class="tooltiptext">
                                     Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
                                 </span>
-                            </span>
-                            <form id="bmi-calculator">
-                                <p>
-                                    <label for="height">Größe (m):</label>
-                                    <input type="text" id="height" name="height" />
-                                </p>
-                                <p>
-                                    <label for="weight">Körpergewicht (kg):</label>
-                                    <input type="text" id="weight" name="weight" />
-                                </p>
-                                <p>
-                                    <label for="bmi">Dein BMI: </label>
-                                    <span id="bmi"></span>
-                                </p>
-                                <div id="weight-normal" style="display: none" ;>Dein BMI ist normal!</div>
-                                <div id="weight-low" style="display: none">Dein BMI ist zu niedrig!</div>
-                                <div id="weight-high" style="display: none">Dein BMI ist zu hoch!</div>
-                            </form>
+                                </span>
+                                <form id="bmi-calculator">
+                                    <p>
+                                        <label for="height">Größe (m):</label>
+                                        <input type="text" id="height" name="height" />
+                                    </p>
+                                    <p>
+                                        <label for="weight">Körpergewicht (kg):</label>
+                                        <input type="text" id="weight" name="weight" />
+                                    </p>
+                                    <p>
+                                        <label for="bmi">Dein BMI: </label>
+                                        <span id="bmi"></span>
+                                    </p>
+                                    <div id="weight-normal" style="display: none" ;>Dein BMI ist normal!</div>
+                                    <div id="weight-low" style="display: none">Dein BMI ist zu niedrig!</div>
+                                    <div id="weight-high" style="display: none">Dein BMI ist zu hoch!</div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- 
-        This is how collapsing will work
-        <button type="button" class="collapsible"><span id="collapsible__indicator"></span>Show BMI Calculator</button>
-        <div class="content">qweqweqwe</div>
- -->
     </main>
     <footer>
         <div class="footer-bot">
