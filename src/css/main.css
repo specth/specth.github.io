@@ -103,14 +103,15 @@ h3 {
 
 /* --- Buttons --- */
 
-button {
+button, button:focus {
     background-color: #f0da50;
     color: #333;
     border: 1px solid #333;
+    min-height: 3rem;
     padding: .4rem;
     font-size: 1rem;
     font-family: inherit;
-    border-radius: 3px;
+    outline: none;
 }
 
 button:hover {
@@ -256,4 +257,18 @@ footer {
     h1 {
         margin-top: 0;
     }
+}
+
+/* JavaScript page */
+.catImage {
+    width: 90%;
+    margin: 2rem;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    height: 500px;
+    object-position: right;
+}
+
+#randomCatImage {
+    text-align: center;
 }
