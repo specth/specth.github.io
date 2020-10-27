@@ -25,7 +25,7 @@ Green:        #2E933C
 .gameButton {
     display: inline-block;
     float: left;
-    margin: .2rem .4rem .2rem 0;
+    margin: .3rem .6rem .3rem 0;
     width: 130px;
     outline: none;
 }

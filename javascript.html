@@ -8,7 +8,6 @@
     <script type="text/javascript" src="src/js/nav.js"></script>
     <script type="text/javascript" src="src/js/bmiCalculator.js"></script>
     <script type="text/javascript" src="src/js/collapsible.js"></script>
-    <script type="text/javascript" src="src/js/getMeals.js"></script>
 
 </head>
 
@@ -56,38 +55,48 @@
                     <div class="shadow">
                         <div class="gameContent">
                             <h2>
-                                Mahlzeiten-Generator
+                                Zeige eine zufällige Katze
                             </h2>
                             <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
                                 <span class="tooltiptext">
-                                    Inspiriert durch Florin Pops Challenge '10 JavaScript Projects in 10 Hours'.
+                                    Führt einen fetch auf die randomCat-API aus, die die URL eines zufälligen
+                                    Katzenbildes zurückgibt.
                                 </span>
                             </span>
 
-                            <div id="currentMealImage"></div>
+                            <div id="randomCatImage">
+                                <img src="src/img/tree-cat.jpg" class="catImage">
+                            </div>
+                            <button class="button" id="cat_btn">Zeig mir eine Katze!</button>
 
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class=" row">
                     <div class="col-6">
                         <div class="shadow">
                             <div class="gameContent">
                                 <h2>
                                     Hüpfspiel – nicht den Rand berühren!
                                 </h2>
-                                <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
-                                <span class="tooltiptext">
-                                    Erweiterung einer Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
+                                <span class="tooltip"><sup><i class="fas fa-info-circle"
+                                            style="font-size: 1rem"></i></sup>
+                                    <span class="tooltiptext">
+                                        Erweiterung einer Übung aus dem Kurs "Modernes JavaScript (ES6)" von
+                                        Jannis
+                                        Seemann.
+                                    </span>
                                 </span>
-                                </span>
-                                <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen zu lassen. Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
+                                <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen
+                                    zu lassen.
+                                    Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
 
                                 <div class="gameContent">
                                     <button id="jumpGameStartButton" class="gameButton" type="button">Spiel
-                                    beginnen</button>
-                                    <button id="jumpGameStopButton" class="gameButton" type="button">Spiel beenden</button>
+                                        beginnen</button>
+                                    <button id="jumpGameStopButton" class="gameButton" type="button">Spiel
+                                        beenden</button>
                                 </div>
                                 <div class="gameContent">
                                     <p>Deine Punktzahl: <span id="jumpGameResult"></span></p>
@@ -108,19 +117,22 @@
                                 <h2>
                                     Teste Deine Reaktionen!
                                 </h2>
-                                <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
-                                <span class="tooltiptext">
-                                    Erweiterung einer Übung aus dem Kurs "Der komplette Web-Entwickler Kurs" von Denis
-                                    Panjuta.
-                                </span>
+                                <span class="tooltip"><sup><i class="fas fa-info-circle"
+                                            style="font-size: 1rem"></i></sup>
+                                    <span class="tooltiptext">
+                                        Erweiterung einer Übung aus dem Kurs "Der komplette Web-Entwickler Kurs"
+                                        von
+                                        Denis
+                                        Panjuta.
+                                    </span>
                                 </span>
                                 <p>Klicke so schnell Du kannst auf die Formen.</p>
 
                                 <div class="gameContent">
                                     <button id="reactionGameStartButton" class="gameButton" type="button">Spiel
-                                    beginnen</button>
+                                        beginnen</button>
                                     <button id="reactionGameStopButton" class="gameButton" type="button">Spiel
-                                    beenden</button>
+                                        beenden</button>
                                 </div>
                                 <div class="gameContent">
                                     <p>Deine Zeit: <span id="result"></span></p>
@@ -146,10 +158,11 @@
                                 <h2>
                                     BMI-Rechner
                                 </h2>
-                                <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
-                                <span class="tooltiptext">
-                                    Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
-                                </span>
+                                <span class="tooltip"><sup><i class="fas fa-info-circle"
+                                            style="font-size: 1rem"></i></sup>
+                                    <span class="tooltiptext">
+                                        Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
+                                    </span>
                                 </span>
                                 <form id="bmi-calculator">
                                     <p>
@@ -180,7 +193,8 @@
                 <div class="row">
                     <div class="col-6">
                         <p id="footer-made-with">
-                            <i class="fab fa-html5" aria-hidden="true"></i> + <i class="fab fa-css3" aria-hidden="true"></i> + <i class="fab fa-js" aria-hidden="true"></i> <br />
+                            <i class="fab fa-html5" aria-hidden="true"></i> + <i class="fab fa-css3"
+                                aria-hidden="true"></i> + <i class="fab fa-js" aria-hidden="true"></i> <br />
                         </p>
                         <p>
                             Kein Framework. Kein Template. Vanilla JS.
@@ -191,6 +205,7 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="src/js/randomCat.js"></script>
 </body>
 
 </html>
