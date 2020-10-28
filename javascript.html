@@ -55,6 +55,22 @@
                     <div class="shadow">
                         <div class="gameContent">
                             <h2>
+                                DotA 2 Heroes
+                            </h2>
+
+                            <div id="allDotaHeroes">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="shadow">
+                        <div class="gameContent">
+                            <h2>
                                 Zeige eine zufällige Katze
                             </h2>
                             <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
@@ -72,120 +88,118 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class=" row">
-                    <div class="col-6">
-                        <div class="shadow">
-                            <div class="gameContent">
-                                <h2>
-                                    Hüpfspiel – nicht den Rand berühren!
-                                </h2>
-                                <span class="tooltip"><sup><i class="fas fa-info-circle"
-                                            style="font-size: 1rem"></i></sup>
-                                    <span class="tooltiptext">
-                                        Erweiterung einer Übung aus dem Kurs "Modernes JavaScript (ES6)" von
-                                        Jannis
-                                        Seemann.
-                                    </span>
+            <div class=" row">
+                <div class="col-6">
+                    <div class="shadow">
+                        <div class="gameContent">
+                            <h2>
+                                Hüpfspiel – nicht den Rand berühren!
+                            </h2>
+                            <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
+                                <span class="tooltiptext">
+                                    Erweiterung einer Übung aus dem Kurs "Modernes JavaScript (ES6)" von
+                                    Jannis
+                                    Seemann.
                                 </span>
-                                <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen
-                                    zu lassen.
-                                    Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
+                            </span>
+                            <p>Mehr ist es nicht. Klicke einfach auf's Spielfeld, um den Kreis springen
+                                zu lassen.
+                                Sobald der Kreis den Rand streift, ist das Spiel vorbei.</p>
 
-                                <div class="gameContent">
-                                    <button id="jumpGameStartButton" class="gameButton" type="button">Spiel
-                                        beginnen</button>
-                                    <button id="jumpGameStopButton" class="gameButton" type="button">Spiel
-                                        beenden</button>
-                                </div>
-                                <div class="gameContent">
-                                    <p>Deine Punktzahl: <span id="jumpGameResult"></span></p>
-                                </div>
+                            <div class="gameContent">
+                                <button id="jumpGameStartButton" class="gameButton" type="button">Spiel
+                                    beginnen</button>
+                                <button id="jumpGameStopButton" class="gameButton" type="button">Spiel
+                                    beenden</button>
                             </div>
-
-                            <div id="jumpGame"></div>
-
-                            <script type="text/javascript" src="./src/js/jumpGame.js"></script>
+                            <div class="gameContent">
+                                <p>Deine Punktzahl: <span id="jumpGameResult"></span></p>
+                            </div>
                         </div>
+
+                        <div id="jumpGame"></div>
+
+                        <script type="text/javascript" src="./src/js/jumpGame.js"></script>
                     </div>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-6">
-                        <div class="shadow">
-                            <div class="gameContent">
-                                <h2>
-                                    Teste Deine Reaktionen!
-                                </h2>
-                                <span class="tooltip"><sup><i class="fas fa-info-circle"
-                                            style="font-size: 1rem"></i></sup>
-                                    <span class="tooltiptext">
-                                        Erweiterung einer Übung aus dem Kurs "Der komplette Web-Entwickler Kurs"
-                                        von
-                                        Denis
-                                        Panjuta.
-                                    </span>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shadow">
+                        <div class="gameContent">
+                            <h2>
+                                Teste Deine Reaktionen!
+                            </h2>
+                            <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
+                                <span class="tooltiptext">
+                                    Erweiterung einer Übung aus dem Kurs "Der komplette Web-Entwickler Kurs"
+                                    von
+                                    Denis
+                                    Panjuta.
                                 </span>
-                                <p>Klicke so schnell Du kannst auf die Formen.</p>
+                            </span>
+                            <p>Klicke so schnell Du kannst auf die Formen.</p>
 
-                                <div class="gameContent">
-                                    <button id="reactionGameStartButton" class="gameButton" type="button">Spiel
-                                        beginnen</button>
-                                    <button id="reactionGameStopButton" class="gameButton" type="button">Spiel
-                                        beenden</button>
-                                </div>
-                                <div class="gameContent">
-                                    <p>Deine Zeit: <span id="result"></span></p>
-                                    <p>Rekord: <span id="record"></span></p>
-
-
-                                </div>
+                            <div class="gameContent">
+                                <button id="reactionGameStartButton" class="gameButton" type="button">Spiel
+                                    beginnen</button>
+                                <button id="reactionGameStopButton" class="gameButton" type="button">Spiel
+                                    beenden</button>
                             </div>
-                            <script type="text/javascript" src="./src/js/reaktionszeittester.js"></script>
+                            <div class="gameContent">
+                                <p>Deine Zeit: <span id="result"></span></p>
+                                <p>Rekord: <span id="record"></span></p>
 
-                            <div id="reaction-game">
-                                <div id="target"></div>
 
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <script type="text/javascript" src="./src/js/reaktionszeittester.js"></script>
 
-                <div class="row">
-                    <div class="col-6">
-                        <div class="shadow">
-                            <div class="gameContent">
-                                <h2>
-                                    BMI-Rechner
-                                </h2>
-                                <span class="tooltip"><sup><i class="fas fa-info-circle"
-                                            style="font-size: 1rem"></i></sup>
-                                    <span class="tooltiptext">
-                                        Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
-                                    </span>
-                                </span>
-                                <form id="bmi-calculator">
-                                    <p>
-                                        <label for="height">Größe (m):</label>
-                                        <input type="text" id="height" name="height" />
-                                    </p>
-                                    <p>
-                                        <label for="weight">Körpergewicht (kg):</label>
-                                        <input type="text" id="weight" name="weight" />
-                                    </p>
-                                    <p>
-                                        <label for="bmi">Dein BMI: </label>
-                                        <span id="bmi"></span>
-                                    </p>
-                                    <div id="weight-normal" style="display: none" ;>Dein BMI ist normal!</div>
-                                    <div id="weight-low" style="display: none">Dein BMI ist zu niedrig!</div>
-                                    <div id="weight-high" style="display: none">Dein BMI ist zu hoch!</div>
-                                </form>
-                            </div>
+                        <div id="reaction-game">
+                            <div id="target"></div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="shadow">
+                        <div class="gameContent">
+                            <h2>
+                                BMI-Rechner
+                            </h2>
+                            <span class="tooltip"><sup><i class="fas fa-info-circle" style="font-size: 1rem"></i></sup>
+                                <span class="tooltiptext">
+                                    Übung aus dem Kurs "Modernes JavaScript (ES6)" von Jannis Seemann.
+                                </span>
+                            </span>
+                            <form id="bmi-calculator">
+                                <p>
+                                    <label for="height">Größe (m):</label>
+                                    <input type="text" id="height" name="height" />
+                                </p>
+                                <p>
+                                    <label for="weight">Körpergewicht (kg):</label>
+                                    <input type="text" id="weight" name="weight" />
+                                </p>
+                                <p>
+                                    <label for="bmi">Dein BMI: </label>
+                                    <span id="bmi"></span>
+                                </p>
+                                <div id="weight-normal" style="display: none" ;>Dein BMI ist normal!</div>
+                                <div id="weight-low" style="display: none">Dein BMI ist zu niedrig!</div>
+                                <div id="weight-high" style="display: none">Dein BMI ist zu hoch!</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer-bot">
@@ -206,6 +220,7 @@
     </footer>
 
     <script type="text/javascript" src="src/js/randomCat.js"></script>
+    <script type="text/javascript" src="src/js/dota.js"></script>
 </body>
 
 </html>
